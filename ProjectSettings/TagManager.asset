@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - SecondarySelection
+  - MoveState
+  - ShadowOnlyStatic
+  - Light
+  - NonPrioritizedCameraOnlyLayer
   layers:
   - Default
   - TransparentFX
@@ -13,31 +18,40 @@ TagManager:
   - UI
   - 
   - 
+  - Ground
+  - Unit
+  - Selectable
+  - Particles
+  - Navmesh Ignore
+  - Sound
+  - Navmesh Obstacle
+  - DollRoom
+  - ScreenSpaceDecals
+  - ClothCollider
+  - Dismemberment
+  - Background
+  - FXRaycast
+  - GroundNoCamera
+  - CameraOnly
+  - SphereBoundsUnit
+  - SphereBoundsObject
+  - NoOccludedObjectClipping
+  - LocalMapOnly
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - WeaponCollider
+  - Vertex Lighted
+  - Editor Gizmos
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Markers
+    uniqueID: 1360558461
+    locked: 0
+  - name: Settlement
+    uniqueID: 1964125405
+    locked: 0
+  - name: Buildings
+    uniqueID: 776884089
     locked: 0
