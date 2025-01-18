@@ -1,5 +1,6 @@
 ﻿using AssemblyImporter;
 using Microsoft.CodeAnalysis;
+using System.Diagnostics;
 using System.Reflection;
 
 if (args.Length != 2) {
@@ -11,15 +12,41 @@ string pathToGameDir = args[0];
 string pathToOutputDir = args[1];
 string pathToManagedDir = Path.Combine(pathToGameDir, "Wrath_Data", "Managed");
 
-string[] assemblies = [
-    "Assembly-CSharp",
-    "Assembly-CSharp-firstpass"
-];
+Dictionary<AssemblyType, List<string>> assemblies = new() {
+    [AssemblyType.Original] = [
+        "Assembly-CSharp"
+    ],
+    [AssemblyType.OriginalFirstPass] = [
+        "Assembly-CSharp-firstpass"
+    ],
+    [AssemblyType.Package] = [
+        "Owlcat.Runtime.Core",
+        "Owlcat.Runtime.Hardware",
+        "Owlcat.Runtime.UI",
+        "Owlcat.Runtime.UniRx",
+        "Owlcat.Runtime.Validation",
+        "Owlcat.Runtime.Visual",
+        "Owlcat.SharedTypes",
+    ]
+};
+
+Dictionary<string, AssemblyType> assemblyToAssemblyType = assemblies
+    .SelectMany(x => x.Value.Select(y => (y, x.Key)))
+    .ToDictionary(x => x.y, x => x.Key);
 
 PathAssemblyResolver resolver = new(Directory.GetFiles(pathToManagedDir, "*.dll"));
 using MetadataLoadContext ctx = new(resolver, "mscorlib");
 
-List<IGeneratedTypeDeclaration> generatedTypes = Pass1_CreateTypes(ctx, assemblies);
+Dictionary<string, Type[]> assemblyToLoadedTypes = assemblyToAssemblyType.ToDictionary(
+    x => x.Key,
+    x => TryLoadTypesFromAssembly(ctx, x.Key).ToArray()
+);
+
+Dictionary<Type, string> typeToAssembly = assemblyToLoadedTypes
+    .SelectMany(x => x.Value.Select(y => (y, x.Key)))
+    .ToDictionary(x => x.y, x => x.Key);
+
+List<IGeneratedTypeDeclaration> generatedTypes = Pass1_CreateTypes(ctx, assemblyToLoadedTypes.Values.SelectMany(x => x));
 Pass2_StripUnreferencedNestedTypes(generatedTypes);
 
 List<IGeneratedTypeDeclaration> declaredTypes = Pass3_GetDeclaredTypes(generatedTypes);
@@ -29,25 +56,56 @@ foreach (IGeneratedTypeDeclaration gen in generatedTypes) {
     Pass5_SubstituteUnresolvedTypes(declaredTypes, gen);
 }
 
-HashSet<string> validPaths = [];
+Dictionary<string, IGeneratedTypeDeclaration> pathToTypeMap = generatedTypes.ToDictionary(
+    x => {
+        string assembly = typeToAssembly[x.ReferencedType];
+        AssemblyType assemblyType = assemblyToAssemblyType[assembly];
+        string[] directoryComponents = x.ReferencedType.Namespace?.Split('.') ?? [];
 
-foreach (IGeneratedTypeDeclaration gen in generatedTypes) {
-    validPaths.Add(WriteTypeToFile(gen, pathToOutputDir));
-}
+        if (assemblyType is AssemblyType.Package) {
+            // Types in the assembly will typically start at the assembly root, e.g.:
+            // Owlcat.Runtime.Core -> types in namespace Owlcat.Runtime.Core should start at the root of the assembly.
 
-foreach (string file in Directory.GetFiles(pathToOutputDir, "*.cs", SearchOption.AllDirectories)) {
-    if (!validPaths.Contains(file)) {
-        Console.WriteLine($"Cleaning up stale file {file}");
-        File.Delete(file);
+            string[] assemblyNameComponents = assembly.Split('.');
+            int componentsToDrop = 0;
+
+            while (componentsToDrop < Math.Min(directoryComponents.Length, assemblyNameComponents.Length) &&
+                directoryComponents[componentsToDrop] == assemblyNameComponents[componentsToDrop])
+            {
+                ++componentsToDrop;
+            }
+
+            directoryComponents = directoryComponents[componentsToDrop..];
+        }
+
+        string basePath = assemblyType switch {
+            AssemblyType.Original => "Assets/_Wrath",
+            AssemblyType.OriginalFirstPass => "Assets/_WrathFirstPass",
+            _ => $"Packages/com.wrath.core/{assembly}"
+        };
+
+        string folderPath = string.Join("/", directoryComponents);
+        return Path.Combine(basePath, folderPath, $"{x.Name}.cs");
+    },
+    x => x
+);
+
+foreach ((string path, IGeneratedTypeDeclaration type) in pathToTypeMap) {
+    string fullPath = Path.Combine(pathToOutputDir, path);
+    Directory.CreateDirectory(Path.GetDirectoryName(fullPath));
+
+    string output = GeneratedTypeFormatter.Format(type);
+    if (File.Exists(fullPath) && File.ReadAllText(fullPath) == output) {
+        // Check if the file already exists - if it does, load it and check if it's the same before writing.
+        // We do this to avoid bumping the timestamp on the file if it hasn't changed, which would cause Unity to do a full reimport.
+        continue;
     }
+
+    Console.WriteLine($"Writing {type.Namespace}.{type.Name} to {fullPath}");
+    File.WriteAllText(fullPath, output);
 }
 
-foreach (string dir in Directory.GetDirectories(pathToOutputDir, "*", SearchOption.AllDirectories)) {
-    if (Directory.GetFiles(dir, "*.cs", SearchOption.AllDirectories).Length == 0) {
-        Console.WriteLine($"Cleaning up empty directory {dir}");
-        Directory.Delete(dir);
-    }
-}
+
 static IEnumerable<Type> TryLoadTypesFromAssembly(MetadataLoadContext ctx, string assemblyName) {
     try {
         return ctx.LoadFromAssemblyName(assemblyName).GetTypes();
@@ -57,11 +115,14 @@ static IEnumerable<Type> TryLoadTypesFromAssembly(MetadataLoadContext ctx, strin
     }
 }
 
-static List<IGeneratedTypeDeclaration> Pass1_CreateTypes(MetadataLoadContext ctx, string[] assemblies) {
+static List<IGeneratedTypeDeclaration> Pass1_CreateTypes(MetadataLoadContext ctx, IEnumerable<Type> types) {
     Dictionary<Type, IGeneratedType> generatedTypeLookup = [];
     List<IGeneratedTypeDeclaration> generatedTypes = [];
 
-    foreach (Type type in assemblies.SelectMany(x => TryLoadTypesFromAssembly(ctx, x))) {
+    foreach (Type type in types) {
+        if (type.Name == "OwlcatRenderPipelineAsset") {
+            Debugger.Break();
+        }
         if (!type.IsGenericType && type.BaseType?.Name is "MonoBehaviour" or "ScriptableObject") {
             generatedTypes.Add((IGeneratedTypeDeclaration)GeneratedType.Create(generatedTypeLookup, type));
         }
@@ -135,24 +196,8 @@ static bool IsTypeFullyResolved(List<IGeneratedTypeDeclaration> declaredTypes, I
     return TypeGeneratorUtil.IsUnityEngineType(type.ReferencedType) || type.Namespace.StartsWith("System");
 }
 
-static string WriteTypeToFile(IGeneratedTypeDeclaration gen, string pathToOutputDir) {
-    string path = gen.Namespace?.Replace(".", "\\") ?? string.Empty;
-    string pathToFile = Path.Combine(pathToOutputDir, path, $"{gen.Name}.cs");
-
-    if (!string.IsNullOrWhiteSpace(path)) {
-        Directory.CreateDirectory(Path.Combine(pathToOutputDir, path));
-    }
-
-    // Check if the file already exists - if it does, load it and check if it's the same before writing.
-    // We do this to avoid bumping the timestamp on the file if it hasn't changed, which would cause Unity to do a full reimport.
-    string outputStr = GeneratedTypeFormatter.Format(gen);
-
-    if (File.Exists(pathToFile) && File.ReadAllText(pathToFile) == outputStr) {
-        return pathToFile;
-    }
-
-    Console.WriteLine($"Writing {gen.Name} to {pathToFile}");
-    File.WriteAllText(pathToFile, outputStr);
-
-    return pathToFile;
+enum AssemblyType {
+    Original,
+    OriginalFirstPass,
+    Package
 }
