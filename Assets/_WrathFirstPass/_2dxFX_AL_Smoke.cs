@@ -1,0 +1,24 @@
+using System;
+using UnityEngine;
+
+public class _2dxFX_AL_Smoke : MonoBehaviour {
+    public Material ForceMaterial /* UnityEngine.Material */;
+    public bool ActiveChange /* System.Boolean */;
+    public bool AddShadow /* System.Boolean */;
+    public bool ReceivedShadow /* System.Boolean */;
+    public int BlendMode /* System.Int32 */;
+    public float _Alpha /* System.Single */;
+    public Texture2D __MainTex2 /* UnityEngine.Texture2D */;
+    public float _Value1 /* System.Single */;
+    public float _TurnToSmoke /* System.Single */;
+    public float _Value3 /* System.Single */;
+    public float _Value4 /* System.Single */;
+    public Color _Color1 /* UnityEngine.Color */;
+    public Color _Color2 /* UnityEngine.Color */;
+    public bool _AutoScrollX /* System.Boolean */;
+    public float _AutoScrollSpeedX /* System.Single */;
+    public bool _AutoScrollY /* System.Boolean */;
+    public float _AutoScrollSpeedY /* System.Single */;
+    public int ShaderChange /* System.Int32 */;
+}
+
