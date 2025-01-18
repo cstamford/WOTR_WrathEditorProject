@@ -132,11 +132,6 @@ static bool IsTypeFullyResolved(List<IGeneratedTypeDeclaration> declaredTypes, I
         return true;
     }
 
-    // TODO: Only checks one level deep
-    if (declaredTypes.Any(x => x is IGeneratedTypeDeclaration decl && decl.NestedTypes.Any(y => y.ReferencedType == type.ReferencedType))) {
-        return true;
-    }
-
     return TypeGeneratorUtil.IsUnityEngineType(type.ReferencedType) || type.Namespace.StartsWith("System");
 }
 
