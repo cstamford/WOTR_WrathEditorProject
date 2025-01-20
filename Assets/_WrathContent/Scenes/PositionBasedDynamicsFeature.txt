@@ -1,0 +1,32 @@
+PositionBasedDynamicsFeature
+    m_GameObject: PPtr { FileId = 0, PathId = 0, Valid = False }
+    m_Enabled: 1
+    m_Script: PPtr { FileId = 0, PathId = 12425, Valid = True }
+    m_Name: "PositionBasedDynamicsFeature"
+    m_Shaders: { 
+        PBDSingleDispatchSimulatorShader: PPtr { FileId = 0, PathId = 128, Valid = True }
+        PBDCollision: PPtr { FileId = 0, PathId = 124, Valid = True }
+        PBDForceVolume: PPtr { FileId = 0, PathId = 140, Valid = True }
+        PBDSkinningShader: PPtr { FileId = 0, PathId = 129, Valid = True }
+        PBDMeshShader: PPtr { FileId = 0, PathId = 130, Valid = True }
+        PBDBodyAabbShader: PPtr { FileId = 0, PathId = 135, Valid = True }
+        PBDParticlesDebugShader: PPtr { FileId = 0, PathId = 63, Valid = True }
+        PBDConstraintDebugShader: PPtr { FileId = 0, PathId = 81, Valid = True }
+        PBDDebug: PPtr { FileId = 0, PathId = 84, Valid = True }
+        RadixSortCS: PPtr { FileId = 0, PathId = 133, Valid = True }
+        HashtableCS: PPtr { FileId = 0, PathId = 137, Valid = True }
+        SpatialHashingCS: PPtr { FileId = 0, PathId = 138, Valid = True }
+        CameraCullingCS: PPtr { FileId = 0, PathId = 132, Valid = True }
+    }
+    m_DebugSettings: { 
+        Enabled: False
+        ParticleSize: 0.06
+        ParticleColor: { r: 1, g: 0, b: 0, a: 1 }
+        ConstraintColor: { r: 1, g: 0.92156863, b: 0.015686275, a: 1 }
+        ShowNormals: False
+        NormalsColor: { r: 0, g: 0, b: 1, a: 1 }
+        ShowCollidersAabb: False
+        ShowCollidersGrid: False
+        ShowForceVolumesAabb: False
+        ShowForceVolumesGrid: False
+    }

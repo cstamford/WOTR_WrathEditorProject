@@ -1,0 +1,33 @@
+OwlcatRenderPipelineAsset
+    m_GameObject: PPtr { FileId = 0, PathId = 0, Valid = False }
+    m_Enabled: 1
+    m_Script: PPtr { FileId = 0, PathId = 11487, Valid = True }
+    m_Name: "OwlcatRenderPipelineAsset"
+    m_RendererData: PPtr { FileId = 0, PathId = 13552, Valid = True }
+    m_UseSRPBatcher: True
+    m_SupportsDynamicBatching: True
+    m_SupportsHDR: True
+    m_SupportsDistortion: True
+    m_RenderScale: 1
+    m_DecalSettings: { Enabled: True }
+    m_ShadowSettings: { 
+        ShadowQuality: 2
+        AtlasSize: 4096
+        ShadowNearPlane: 2
+        ShadowDistance: 100
+        DirectionalLightCascadeResolution: 2048
+        PointLightResolution: 512
+        SpotLightResolution: 512
+        ConsoleReduction: 0.5
+        DirectionalLightCascades: { 
+            Resolution: 1024
+            Count: 1
+            Cascade2Splits: 0.11738767
+            Cascade3Splits: { x: 0.067, y: 0.2 }
+            Cascade4Splits: { x: 0.067, y: 0.2, z: 0.467 }
+        }
+        DepthBias: 2.6
+        NormalBias: 0
+    }
+    m_PostProcessSettings: { m_ColorGradingLutSize: 32, m_ColorGradingMode: 1 }
+    m_TerrainSettings: { TriplanarEnabled: True }

@@ -1,0 +1,73 @@
+PostProcessData
+    m_GameObject: PPtr { FileId = 0, PathId = 0, Valid = False }
+    m_Enabled: 1
+    m_Script: PPtr { FileId = 0, PathId = 339, Valid = True }
+    m_Name: "PostProcessData"
+    Shaders: { 
+        StopNanPS: PPtr { FileId = 0, PathId = 74, Valid = True }
+        SubpixelMorphologicalAntialiasingPS: PPtr { FileId = 0, PathId = 76, Valid = True }
+        GaussianDepthOfFieldPS: PPtr { FileId = 0, PathId = 104, Valid = True }
+        BokehDepthOfFieldPS: PPtr { FileId = 0, PathId = 64, Valid = True }
+        CameraMotionBlurPS: PPtr { FileId = 0, PathId = 99, Valid = True }
+        PaniniProjectionPS: PPtr { FileId = 0, PathId = 60, Valid = True }
+        LutBuilderLdrPS: PPtr { FileId = 0, PathId = 56, Valid = True }
+        LutBuilderHdrPS: PPtr { FileId = 0, PathId = 66, Valid = True }
+        BloomPS: PPtr { FileId = 0, PathId = 93, Valid = True }
+        BloomEnhancedPS: PPtr { FileId = 0, PathId = 61, Valid = True }
+        RadialBlurPS: PPtr { FileId = 0, PathId = 83, Valid = True }
+        SaturationOverlayPS: PPtr { FileId = 0, PathId = 100, Valid = True }
+        MaskedColorTransformPS: PPtr { FileId = 0, PathId = 119, Valid = True }
+        UberPostPS: PPtr { FileId = 0, PathId = 78, Valid = True }
+        FinalPostPassPS: PPtr { FileId = 0, PathId = 116, Valid = True }
+        DaltonizationPS: PPtr { FileId = 0, PathId = 111, Valid = True }
+    }
+    Textures: { 
+        BlueNoise16LTex[32] = {
+            [0] = PPtr { FileId = 0, PathId = 25, Valid = True }
+            [1] = PPtr { FileId = 0, PathId = 47, Valid = True }
+            [2] = PPtr { FileId = 0, PathId = 49, Valid = True }
+            [3] = PPtr { FileId = 0, PathId = 9, Valid = True }
+            [4] = PPtr { FileId = 0, PathId = 36, Valid = True }
+            [5] = PPtr { FileId = 0, PathId = 11, Valid = True }
+            [6] = PPtr { FileId = 0, PathId = 12, Valid = True }
+            [7] = PPtr { FileId = 0, PathId = 20, Valid = True }
+            [8] = PPtr { FileId = 0, PathId = 22, Valid = True }
+            [9] = PPtr { FileId = 0, PathId = 23, Valid = True }
+            [10] = PPtr { FileId = 0, PathId = 30, Valid = True }
+            [11] = PPtr { FileId = 0, PathId = 18, Valid = True }
+            [12] = PPtr { FileId = 0, PathId = 21, Valid = True }
+            [13] = PPtr { FileId = 0, PathId = 43, Valid = True }
+            [14] = PPtr { FileId = 0, PathId = 29, Valid = True }
+            [15] = PPtr { FileId = 0, PathId = 5, Valid = True }
+            [16] = PPtr { FileId = 0, PathId = 40, Valid = True }
+            [17] = PPtr { FileId = 0, PathId = 33, Valid = True }
+            [18] = PPtr { FileId = 0, PathId = 45, Valid = True }
+            [19] = PPtr { FileId = 0, PathId = 27, Valid = True }
+            [20] = PPtr { FileId = 0, PathId = 10, Valid = True }
+            [21] = PPtr { FileId = 0, PathId = 7, Valid = True }
+            [22] = PPtr { FileId = 0, PathId = 13, Valid = True }
+            [23] = PPtr { FileId = 0, PathId = 41, Valid = True }
+            [24] = PPtr { FileId = 0, PathId = 28, Valid = True }
+            [25] = PPtr { FileId = 0, PathId = 44, Valid = True }
+            [26] = PPtr { FileId = 0, PathId = 38, Valid = True }
+            [27] = PPtr { FileId = 0, PathId = 26, Valid = True }
+            [28] = PPtr { FileId = 0, PathId = 8, Valid = True }
+            [29] = PPtr { FileId = 0, PathId = 24, Valid = True }
+            [30] = PPtr { FileId = 0, PathId = 37, Valid = True }
+            [31] = PPtr { FileId = 0, PathId = 32, Valid = True }
+        }
+        FilmGrainTex[10] = {
+            [0] = PPtr { FileId = 0, PathId = 19, Valid = True }
+            [1] = PPtr { FileId = 0, PathId = 42, Valid = True }
+            [2] = PPtr { FileId = 0, PathId = 6, Valid = True }
+            [3] = PPtr { FileId = 0, PathId = 46, Valid = True }
+            [4] = PPtr { FileId = 0, PathId = 31, Valid = True }
+            [5] = PPtr { FileId = 0, PathId = 35, Valid = True }
+            [6] = PPtr { FileId = 0, PathId = 14, Valid = True }
+            [7] = PPtr { FileId = 0, PathId = 34, Valid = True }
+            [8] = PPtr { FileId = 0, PathId = 48, Valid = True }
+            [9] = PPtr { FileId = 0, PathId = 17, Valid = True }
+        }
+        SmaaAreaTex: PPtr { FileId = 0, PathId = 39, Valid = True }
+        SmaaSearchTex: PPtr { FileId = 0, PathId = 15, Valid = True }
+    }

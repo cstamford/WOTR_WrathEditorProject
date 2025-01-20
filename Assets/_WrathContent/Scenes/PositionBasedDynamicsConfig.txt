@@ -1,0 +1,29 @@
+PositionBasedDynamicsConfig
+    m_GameObject: PPtr { FileId = 0, PathId = 0, Valid = False }
+    m_Enabled: 1
+    m_Script: PPtr { FileId = 1, PathId = 4023, Valid = True }
+    m_Name: "PositionBasedDynamicsConfig"
+    m_DebugSettings: { 
+        ShowBoundingBoxes: False
+        ShowBroadphaseStructure: False
+        m_UpdateEveryFrame: False
+        ColliderColor: { r: 0, g: 1, b: 0, a: 1 }
+        ForceVolumeColor: { r: 1, g: 0, b: 0, a: 1 }
+        BodyColor: { r: 0, g: 0, b: 1, a: 1 }
+        BodyColliderPairColor: { r: 1, g: 0, b: 1, a: 1 }
+        BodyForceVolumePairColor: { r: 0, g: 1, b: 1, a: 1 }
+        BroadphaseStructureColor: { r: 1, g: 0.92156863, b: 0.015686275, a: 1 }
+    }
+    GPU: True
+    UseExperimentalFeatures: False
+    UpdateFrequency: 0
+    UpdateMode: 0
+    SimulationIterations: 4
+    ConstraintIterations: 4
+    Decay: 0.99
+    m_BroadphaseSettings: { 
+        m_Type: 2
+        m_SimpleGridSettings: [[unimplemented]]
+        m_MultilevelGridSettings: { m_Dimemsion: 3, m_CellSize: 3 }
+        m_OptimizedSpatialHashingSettings: { m_CellSize: 3 }
+    }
