@@ -3,8 +3,8 @@ using UnityEngine;
 
 namespace Kingmaker.UI.ActionBar {
 
-public class ActionBarBookmarkElement : MonoBehaviour {
-    [SerializeField] public RectTransform Background /* UnityEngine.RectTransform */;
+public class ActionBarBookmarkElement : global::UnityEngine.MonoBehaviour {
+    [SerializeField] public global::UnityEngine.RectTransform Background /* UnityEngine.RectTransform */;
     public bool MoveByY /* System.Boolean */;
     [SerializeField] public int m_BasyYPosition /* System.Int32 */;
     [SerializeField] public int m_HoverYPosition /* System.Int32 */;

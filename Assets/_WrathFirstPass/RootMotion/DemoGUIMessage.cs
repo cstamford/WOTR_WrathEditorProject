@@ -3,9 +3,9 @@ using UnityEngine;
 
 namespace RootMotion {
 
-public class DemoGUIMessage : MonoBehaviour {
+public class DemoGUIMessage : global::UnityEngine.MonoBehaviour {
     public string text /* System.String */;
-    public Color color /* UnityEngine.Color */;
+    public global::UnityEngine.Color color /* UnityEngine.Color */;
 }
 
 }

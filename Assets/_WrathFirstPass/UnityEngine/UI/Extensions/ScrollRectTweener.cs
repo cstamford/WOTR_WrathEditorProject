@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace UnityEngine.UI.Extensions {
 
-public class ScrollRectTweener : MonoBehaviour {
+public class ScrollRectTweener : global::UnityEngine.MonoBehaviour {
     public float moveSpeed /* System.Single */;
     public bool disableDragWhileTweening /* System.Boolean */;
 }

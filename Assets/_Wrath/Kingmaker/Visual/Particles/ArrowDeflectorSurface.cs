@@ -3,8 +3,8 @@ using UnityEngine;
 
 namespace Kingmaker.Visual.Particles {
 
-public class ArrowDeflectorSurface : MonoBehaviour {
-    public Bounds Bounds /* UnityEngine.Bounds */;
+public class ArrowDeflectorSurface : global::UnityEngine.MonoBehaviour {
+    public global::UnityEngine.Bounds Bounds /* UnityEngine.Bounds */;
     public float BackImpulseMin /* System.Single */;
     public float BackImpulseMax /* System.Single */;
     public float ShieldImpulseMin /* System.Single */;

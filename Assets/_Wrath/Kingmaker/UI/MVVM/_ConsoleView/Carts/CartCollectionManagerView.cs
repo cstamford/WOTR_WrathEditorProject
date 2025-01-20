@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Kingmaker.UI.MVVM._ConsoleView.Carts {
 
-public class CartCollectionManagerView : MonoBehaviour {
+public class CartCollectionManagerView : global::UnityEngine.MonoBehaviour {
     [SerializeField] public float m_Radius /* System.Single */;
     [SerializeField] public float m_OffsetY /* System.Single */;
     [SerializeField] public float m_HoverOffset /* System.Single */;

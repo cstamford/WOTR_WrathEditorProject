@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.View.MapObjects {
 
-public class AbstractEntityPartComponent : MonoBehaviour {
+public class AbstractEntityPartComponent : global::UnityEngine.MonoBehaviour {
 }
 
 }

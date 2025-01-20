@@ -6,7 +6,7 @@ using UnityEngine;
 
 public static class StatusBarExtension {
     public static void OnGUI() {
-        GUILayout.Label("Custom Widget");
+        GUILayout.Label("[TODO] Cute streaming load bar here");
     }
 }
 

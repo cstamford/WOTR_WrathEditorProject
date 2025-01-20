@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.Visual.Debug {
 
-public class FpsLocker : MonoBehaviour {
+public class FpsLocker : global::UnityEngine.MonoBehaviour {
 }
 
 }

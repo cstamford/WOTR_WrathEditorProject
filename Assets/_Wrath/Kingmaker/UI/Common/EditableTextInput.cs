@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Kingmaker.UI.Common {
 
-public class EditableTextInput : MonoBehaviour {
+public class EditableTextInput : global::UnityEngine.MonoBehaviour {
     [SerializeField] public string m_Text /* System.String */;
     [SerializeField] public string m_Placeholder /* System.String */;
 }

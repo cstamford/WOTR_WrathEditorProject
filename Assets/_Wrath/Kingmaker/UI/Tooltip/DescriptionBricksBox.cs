@@ -1,9 +1,10 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.UI.Tooltip {
 
-public class DescriptionBricksBox : MonoBehaviour {
-    public Transform Content /* UnityEngine.Transform */;
+public class DescriptionBricksBox : global::UnityEngine.MonoBehaviour {
+    public global::UnityEngine.Transform Content /* UnityEngine.Transform */;
 }
 
 }

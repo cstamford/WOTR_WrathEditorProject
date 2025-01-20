@@ -4,11 +4,11 @@ using UnityEngine.UI;
 
 namespace Kingmaker.UI.BookEvent {
 
-public class BookEventBaseController : MonoBehaviour {
-    public Image Picture /* UnityEngine.UI.Image */;
-    [SerializeField] public Transform m_Window /* UnityEngine.Transform */;
+public class BookEventBaseController : global::UnityEngine.MonoBehaviour {
+    public global::UnityEngine.UI.Image Picture /* UnityEngine.UI.Image */;
+    [SerializeField] public global::UnityEngine.Transform m_Window /* UnityEngine.Transform */;
     [SerializeField] public float FadeTime /* System.Single */;
-    [SerializeField] public CanvasGroup m_ContentCanvasGroup /* UnityEngine.CanvasGroup */;
+    [SerializeField] public global::UnityEngine.CanvasGroup m_ContentCanvasGroup /* UnityEngine.CanvasGroup */;
 }
 
 }

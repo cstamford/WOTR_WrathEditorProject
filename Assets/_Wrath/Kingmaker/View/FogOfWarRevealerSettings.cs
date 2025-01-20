@@ -3,8 +3,8 @@ using UnityEngine;
 
 namespace Kingmaker.View {
 
-public class FogOfWarRevealerSettings : MonoBehaviour {
-    public Texture2D MaskTexture /* UnityEngine.Texture2D */;
+public class FogOfWarRevealerSettings : global::UnityEngine.MonoBehaviour {
+    public global::UnityEngine.Texture2D MaskTexture /* UnityEngine.Texture2D */;
     public float Radius /* System.Single */;
     public bool DefaultRadius /* System.Boolean */;
     public bool UseDefaultFowBorder /* System.Boolean */;

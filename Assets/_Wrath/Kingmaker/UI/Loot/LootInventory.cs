@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.UI.Loot {
 
-public class LootInventory : MonoBehaviour {
+public class LootInventory : global::UnityEngine.MonoBehaviour {
 }
 
 }

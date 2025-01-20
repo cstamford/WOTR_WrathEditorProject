@@ -1,5 +1,6 @@
+using System;
 using UnityEngine;
 
-public class FxLocatorMapper : MonoBehaviour {
+public class FxLocatorMapper : global::UnityEngine.MonoBehaviour {
 }
 

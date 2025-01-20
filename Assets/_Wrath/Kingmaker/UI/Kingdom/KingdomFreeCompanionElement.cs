@@ -1,10 +1,11 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.UI.Kingdom {
 
-public class KingdomFreeCompanionElement : MonoBehaviour {
-    public SpriteRenderer Portrait /* UnityEngine.SpriteRenderer */;
-    public KingdomFreeCompanionHoverController HoverController /* Kingmaker.UI.Kingdom.KingdomFreeCompanionHoverController */;
+public class KingdomFreeCompanionElement : global::UnityEngine.MonoBehaviour {
+    public global::UnityEngine.SpriteRenderer Portrait /* UnityEngine.SpriteRenderer */;
+    public global::Kingmaker.UI.Kingdom.KingdomFreeCompanionHoverController HoverController /* Kingmaker.UI.Kingdom.KingdomFreeCompanionHoverController */;
 }
 
 }

@@ -1,8 +1,8 @@
 using System;
 using UnityEngine;
 
-public class _2dxFX_Pixel8bitsC64 : MonoBehaviour {
-    public Material ForceMaterial /* UnityEngine.Material */;
+public class _2dxFX_Pixel8bitsC64 : global::UnityEngine.MonoBehaviour {
+    public global::UnityEngine.Material ForceMaterial /* UnityEngine.Material */;
     public bool ActiveChange /* System.Boolean */;
     public float _Alpha /* System.Single */;
     public float _Size /* System.Single */;

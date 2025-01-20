@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Kingmaker.Visual.Debug {
 
-public class MipMapsDebug : MonoBehaviour {
+public class MipMapsDebug : global::UnityEngine.MonoBehaviour {
     public bool IsEnabled /* System.Boolean */;
 }
 

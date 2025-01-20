@@ -4,10 +4,10 @@ using UnityEngine.Events;
 
 namespace Kingmaker.Utility {
 
-public class DistanceController : MonoBehaviour {
+public class DistanceController : global::UnityEngine.MonoBehaviour {
     public float range /* System.Single */;
-    public UnityEvent m_OnDistanceExceeded /* UnityEngine.Events.UnityEvent */;
-    public UnityEvent m_OnAfterOneFrame /* UnityEngine.Events.UnityEvent */;
+    public global::UnityEngine.Events.UnityEvent m_OnDistanceExceeded /* UnityEngine.Events.UnityEvent */;
+    public global::UnityEngine.Events.UnityEvent m_OnAfterOneFrame /* UnityEngine.Events.UnityEvent */;
 }
 
 }

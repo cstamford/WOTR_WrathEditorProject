@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.Utility {
 
-public class ApplyPrefabAtRuntime : MonoBehaviour {
+public class ApplyPrefabAtRuntime : global::UnityEngine.MonoBehaviour {
 }
 
 }

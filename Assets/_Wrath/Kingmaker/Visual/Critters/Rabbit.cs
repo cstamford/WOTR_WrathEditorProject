@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Kingmaker.Visual.Critters {
 
-public class Rabbit : MonoBehaviour {
+public class Rabbit : global::UnityEngine.MonoBehaviour {
     public float RoamRadius /* System.Single */;
     public bool Fearless /* System.Boolean */;
     public float MinIdleTime /* System.Single */;

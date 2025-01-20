@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.Visual {
 
-public class FxIsAlwaysVisible : MonoBehaviour {
+public class FxIsAlwaysVisible : global::UnityEngine.MonoBehaviour {
 }
 
 }

@@ -1,5 +1,6 @@
+using System;
 using UnityEngine;
 
-public class StaticObjectDebugger : MonoBehaviour {
+public class StaticObjectDebugger : global::UnityEngine.MonoBehaviour {
 }
 

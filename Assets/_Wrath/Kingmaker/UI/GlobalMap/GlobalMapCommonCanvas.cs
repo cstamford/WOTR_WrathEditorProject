@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.UI.GlobalMap {
 
-public class GlobalMapCommonCanvas : MonoBehaviour {
+public class GlobalMapCommonCanvas : global::UnityEngine.MonoBehaviour {
 }
 
 }

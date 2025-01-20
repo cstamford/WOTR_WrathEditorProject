@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.Visual.Debug {
 
-public class BoundingBoxRenderer : MonoBehaviour {
+public class BoundingBoxRenderer : global::UnityEngine.MonoBehaviour {
 }
 
 }

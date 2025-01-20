@@ -4,12 +4,12 @@ using UnityEngine.UI;
 
 namespace UnityEngine.UI.Extensions {
 
-public class HoverTooltip : MonoBehaviour {
+public class HoverTooltip : global::UnityEngine.MonoBehaviour {
     public int horizontalPadding /* System.Int32 */;
     public int verticalPadding /* System.Int32 */;
-    public Text thisText /* UnityEngine.UI.Text */;
-    public HorizontalLayoutGroup hlG /* UnityEngine.UI.HorizontalLayoutGroup */;
-    public RectTransform bgImage /* UnityEngine.RectTransform */;
+    public global::UnityEngine.UI.Text thisText /* UnityEngine.UI.Text */;
+    public global::UnityEngine.UI.HorizontalLayoutGroup hlG /* UnityEngine.UI.HorizontalLayoutGroup */;
+    public global::UnityEngine.RectTransform bgImage /* UnityEngine.RectTransform */;
 }
 
 }

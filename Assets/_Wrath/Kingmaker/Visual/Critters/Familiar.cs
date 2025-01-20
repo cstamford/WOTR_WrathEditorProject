@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Kingmaker.Visual.Critters {
 
-public class Familiar : MonoBehaviour {
+public class Familiar : global::UnityEngine.MonoBehaviour {
     [SerializeField] public bool m_CritterAnimator /* System.Boolean */;
 }
 

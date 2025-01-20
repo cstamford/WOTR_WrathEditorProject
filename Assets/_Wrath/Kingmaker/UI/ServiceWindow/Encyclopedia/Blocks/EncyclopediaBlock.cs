@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.UI.ServiceWindow.Encyclopedia.Blocks {
 
-public class EncyclopediaBlock : MonoBehaviour {
+public class EncyclopediaBlock : global::UnityEngine.MonoBehaviour {
 }
 
 }

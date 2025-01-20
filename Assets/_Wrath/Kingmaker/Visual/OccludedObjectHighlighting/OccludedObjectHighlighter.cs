@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.Visual.OccludedObjectHighlighting {
 
-public class OccludedObjectHighlighter : MonoBehaviour {
+public class OccludedObjectHighlighter : global::UnityEngine.MonoBehaviour {
 }
 
 }

@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.UI.Selection {
 
-public class SelectFrameController : MonoBehaviour {
+public class SelectFrameController : global::UnityEngine.MonoBehaviour {
 }
 
 }

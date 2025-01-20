@@ -1,9 +1,10 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.View.Spawners {
 
-public class SpawnerDifficultySettings : MonoBehaviour {
-    public SpawnerDifficultySettings.Type Setting /* Kingmaker.View.Spawners.Type */;
+public class SpawnerDifficultySettings : global::UnityEngine.MonoBehaviour {
+    public global::Kingmaker.View.Spawners.SpawnerDifficultySettings.Type Setting /* Kingmaker.View.Spawners.Type */;
 
     public enum Type {
         Any = 0,

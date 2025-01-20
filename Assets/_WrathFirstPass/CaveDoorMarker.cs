@@ -1,5 +1,6 @@
+using System;
 using UnityEngine;
 
-public class CaveDoorMarker : MonoBehaviour {
+public class CaveDoorMarker : global::UnityEngine.MonoBehaviour {
 }
 

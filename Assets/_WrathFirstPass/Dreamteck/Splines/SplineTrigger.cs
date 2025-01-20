@@ -3,13 +3,13 @@ using UnityEngine;
 
 namespace Dreamteck.Splines {
 
-public class SplineTrigger : ScriptableObject {
-    [SerializeField] public SplineTrigger.Type type /* Dreamteck.Splines.Type */;
+public class SplineTrigger : global::UnityEngine.ScriptableObject {
+    [SerializeField] public global::Dreamteck.Splines.SplineTrigger.Type type /* Dreamteck.Splines.Type */;
     public double position /* System.Double */;
     [SerializeField] public bool enabled /* System.Boolean */;
-    [SerializeField] public Color color /* UnityEngine.Color */;
+    [SerializeField] public global::UnityEngine.Color color /* UnityEngine.Color */;
     [SerializeField] public object actions /* Dreamteck.Splines.SplineAction[] */;
-    public GameObject[] gameObjects /* UnityEngine.GameObject[] */;
+    public global::UnityEngine.GameObject[] gameObjects /* UnityEngine.GameObject[] */;
 
     public enum Type {
         Double = 0,

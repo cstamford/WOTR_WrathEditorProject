@@ -1,10 +1,11 @@
 using Kingmaker.UI.Settlement;
+using System;
 using UnityEngine;
 
 namespace Kingmaker.Kingdom.Settlements {
 
-public class SettlementGameModeStarter : MonoBehaviour {
-    [SerializeField] public SettlementsBuildSlots m_SettlementsBuildSlots /* Kingmaker.UI.Settlement.SettlementsBuildSlots */;
+public class SettlementGameModeStarter : global::UnityEngine.MonoBehaviour {
+    [SerializeField] public global::Kingmaker.UI.Settlement.SettlementsBuildSlots m_SettlementsBuildSlots /* Kingmaker.UI.Settlement.SettlementsBuildSlots */;
 }
 
 }

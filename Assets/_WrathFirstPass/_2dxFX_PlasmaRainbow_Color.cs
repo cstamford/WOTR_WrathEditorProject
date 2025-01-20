@@ -1,8 +1,8 @@
 using System;
 using UnityEngine;
 
-public class _2dxFX_PlasmaRainbow_Color : MonoBehaviour {
-    public Material ForceMaterial /* UnityEngine.Material */;
+public class _2dxFX_PlasmaRainbow_Color : global::UnityEngine.MonoBehaviour {
+    public global::UnityEngine.Material ForceMaterial /* UnityEngine.Material */;
     public bool ActiveChange /* System.Boolean */;
     public float _Alpha /* System.Single */;
     public float _Colors /* System.Single */;

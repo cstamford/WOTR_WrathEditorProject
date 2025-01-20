@@ -4,9 +4,9 @@ using UnityEngine;
 
 namespace Kingmaker.UI {
 
-public class UIHighlighter : MonoBehaviour {
+public class UIHighlighter : global::UnityEngine.MonoBehaviour {
     [SerializeField] public string m_Key /* System.String */;
-    [SerializeField] public LoopAnimator m_Animation /* Kingmaker.UI.Common.Animations.LoopAnimator */;
+    [SerializeField] public global::Kingmaker.UI.Common.Animations.LoopAnimator m_Animation /* Kingmaker.UI.Common.Animations.LoopAnimator */;
 }
 
 }

@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.View {
 
-public class StopAnimationsOnDestroy : MonoBehaviour {
+public class StopAnimationsOnDestroy : global::UnityEngine.MonoBehaviour {
 }
 
 }

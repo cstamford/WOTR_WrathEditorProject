@@ -4,18 +4,18 @@ using UnityEngine;
 
 namespace Kingmaker.Kingdom {
 
-public class KingdomRegionGlowController : MonoBehaviour {
-    [SerializeField] public BorderGlowHighlighter m_BorderGlowHighlighter /* Kingmaker.Visual.Kingdom.BorderGlowHighlighter */;
-    [SerializeField] public Transform m_BordersContainer /* UnityEngine.Transform */;
-    [SerializeField] public RegionObject m_TerraIncognita /* Kingmaker.Kingdom.RegionObject */;
-    public Color ClaimColor /* UnityEngine.Color */;
-    public Color UnclaimColor /* UnityEngine.Color */;
+public class KingdomRegionGlowController : global::UnityEngine.MonoBehaviour {
+    [SerializeField] public global::Kingmaker.Visual.Kingdom.BorderGlowHighlighter m_BorderGlowHighlighter /* Kingmaker.Visual.Kingdom.BorderGlowHighlighter */;
+    [SerializeField] public global::UnityEngine.Transform m_BordersContainer /* UnityEngine.Transform */;
+    [SerializeField] public global::Kingmaker.Kingdom.RegionObject m_TerraIncognita /* Kingmaker.Kingdom.RegionObject */;
+    public global::UnityEngine.Color ClaimColor /* UnityEngine.Color */;
+    public global::UnityEngine.Color UnclaimColor /* UnityEngine.Color */;
     public float BaseWidth /* System.Single */;
     public float WidthMultiplier /* System.Single */;
     public float Time /* System.Single */;
-    public KingdomRegionGlowController.AnimTimes Line00 /* Kingmaker.Kingdom.AnimTimes */;
-    public KingdomRegionGlowController.AnimTimes Line0102 /* Kingmaker.Kingdom.AnimTimes */;
-    public KingdomRegionGlowController.AnimTimes Line03 /* Kingmaker.Kingdom.AnimTimes */;
+    public global::Kingmaker.Kingdom.KingdomRegionGlowController.AnimTimes Line00 /* Kingmaker.Kingdom.AnimTimes */;
+    public global::Kingmaker.Kingdom.KingdomRegionGlowController.AnimTimes Line0102 /* Kingmaker.Kingdom.AnimTimes */;
+    public global::Kingmaker.Kingdom.KingdomRegionGlowController.AnimTimes Line03 /* Kingmaker.Kingdom.AnimTimes */;
 
     public class AnimTimes {
         public float StartDuration /* System.Single */;

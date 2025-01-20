@@ -1,9 +1,10 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.Sound {
 
-public class AkSettingsHolder : MonoBehaviour {
-    public object Settings /* .AkWwiseInitializationSettings */;
+public class AkSettingsHolder : global::UnityEngine.MonoBehaviour {
+    public AkWwiseInitializationSettings Settings /* .AkWwiseInitializationSettings */;
 }
 
 }

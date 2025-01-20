@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Kingmaker.Utility {
 
-public class ReportingClient : MonoBehaviour {
+public class ReportingClient : global::UnityEngine.MonoBehaviour {
     public bool Report /* System.Boolean */;
 }
 

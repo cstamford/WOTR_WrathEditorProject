@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Kingmaker.UI.Common.Animations {
 
-public class FadeAnimator : MonoBehaviour {
+public class FadeAnimator : global::UnityEngine.MonoBehaviour {
     [SerializeField] public float m_AppearTime /* System.Single */;
     [SerializeField] public object m_AppearAnimCurve /* DG.Tweening.Ease */;
     [SerializeField] public float m_DisappearTime /* System.Single */;

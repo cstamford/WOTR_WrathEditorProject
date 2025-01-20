@@ -1,12 +1,13 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.Armies.TacticalCombat.UI {
 
-public class TacticalCombatPathLineVisualizer : MonoBehaviour {
-    [SerializeField] public LineRenderer m_PathRenderer /* UnityEngine.LineRenderer */;
-    [SerializeField] public LineRenderer m_PathOutOfRangeRenderer /* UnityEngine.LineRenderer */;
-    [SerializeField] public GameObject m_ValidDestinationMark /* UnityEngine.GameObject */;
-    [SerializeField] public GameObject m_InvalidDestinationMark /* UnityEngine.GameObject */;
+public class TacticalCombatPathLineVisualizer : global::UnityEngine.MonoBehaviour {
+    [SerializeField] public global::UnityEngine.LineRenderer m_PathRenderer /* UnityEngine.LineRenderer */;
+    [SerializeField] public global::UnityEngine.LineRenderer m_PathOutOfRangeRenderer /* UnityEngine.LineRenderer */;
+    [SerializeField] public global::UnityEngine.GameObject m_ValidDestinationMark /* UnityEngine.GameObject */;
+    [SerializeField] public global::UnityEngine.GameObject m_InvalidDestinationMark /* UnityEngine.GameObject */;
 }
 
 }

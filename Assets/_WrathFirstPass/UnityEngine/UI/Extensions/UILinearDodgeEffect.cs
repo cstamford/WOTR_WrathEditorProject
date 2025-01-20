@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace UnityEngine.UI.Extensions {
 
-public class UILinearDodgeEffect : MonoBehaviour {
+public class UILinearDodgeEffect : global::UnityEngine.MonoBehaviour {
 }
 
 }

@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.RazerChroma {
 
-public class RazerColorData : ScriptableObject {
+public class RazerColorData : global::UnityEngine.ScriptableObject {
     public object m_none /* Kingmaker.RazerChroma.RazerColorInfo */;
     public object m_default /* Kingmaker.RazerChroma.RazerColorInfo */;
     public object m_globalMap /* Kingmaker.RazerChroma.RazerColorInfo */;

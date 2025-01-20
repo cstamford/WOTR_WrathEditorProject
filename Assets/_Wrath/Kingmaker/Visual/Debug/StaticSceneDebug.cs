@@ -3,10 +3,10 @@ using UnityEngine;
 
 namespace Kingmaker.Visual.Debug {
 
-public class StaticSceneDebug : MonoBehaviour {
+public class StaticSceneDebug : global::UnityEngine.MonoBehaviour {
     public bool IsEnabled /* System.Boolean */;
-    public Color ColorStatic /* UnityEngine.Color */;
-    public Color ColorDynamic /* UnityEngine.Color */;
+    public global::UnityEngine.Color ColorStatic /* UnityEngine.Color */;
+    public global::UnityEngine.Color ColorDynamic /* UnityEngine.Color */;
 }
 
 }

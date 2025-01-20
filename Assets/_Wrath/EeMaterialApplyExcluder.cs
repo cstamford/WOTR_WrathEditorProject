@@ -1,5 +1,6 @@
+using System;
 using UnityEngine;
 
-public class EeMaterialApplyExcluder : MonoBehaviour {
+public class EeMaterialApplyExcluder : global::UnityEngine.MonoBehaviour {
 }
 

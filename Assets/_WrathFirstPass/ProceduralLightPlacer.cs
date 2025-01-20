@@ -1,5 +1,6 @@
+using System;
 using UnityEngine;
 
-public class ProceduralLightPlacer : MonoBehaviour {
+public class ProceduralLightPlacer : global::UnityEngine.MonoBehaviour {
 }
 

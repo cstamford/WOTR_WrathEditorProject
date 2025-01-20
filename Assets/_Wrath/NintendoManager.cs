@@ -1,5 +1,6 @@
+using System;
 using UnityEngine;
 
-public class NintendoManager : MonoBehaviour {
+public class NintendoManager : global::UnityEngine.MonoBehaviour {
 }
 

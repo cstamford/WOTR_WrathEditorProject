@@ -1,5 +1,6 @@
+using System;
 using UnityEngine;
 
-public class SelectArmyState : MonoBehaviour {
+public class SelectArmyState : global::UnityEngine.MonoBehaviour {
 }
 

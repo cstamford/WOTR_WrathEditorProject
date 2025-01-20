@@ -3,19 +3,19 @@ using UnityEngine;
 
 namespace Kingmaker.Visual.Mounts {
 
-public class MountOffsets : MonoBehaviour {
-    [SerializeField] public RaceMountOffsetsConfig OffsetsConfig /* Kingmaker.Visual.Mounts.RaceMountOffsetsConfig */;
-    public RaceMountOffsetsConfig MediumOffsetsConfig /* Kingmaker.Visual.Mounts.RaceMountOffsetsConfig */;
-    public RaceMountOffsetsConfig LargeOffsetsConfig /* Kingmaker.Visual.Mounts.RaceMountOffsetsConfig */;
-    public RaceMountOffsetsConfig HugeOffsetsConfig /* Kingmaker.Visual.Mounts.RaceMountOffsetsConfig */;
-    public Transform Root /* UnityEngine.Transform */;
-    public Transform RootBattle /* UnityEngine.Transform */;
-    public Transform PelvisIkTarget /* UnityEngine.Transform */;
-    public Transform LeftFootIkTarget /* UnityEngine.Transform */;
-    public Transform LeftKneeIkTarget /* UnityEngine.Transform */;
-    public Transform RightFootIkTarget /* UnityEngine.Transform */;
-    public Transform RightKneeIkTarget /* UnityEngine.Transform */;
-    public Transform Hands /* UnityEngine.Transform */;
+public class MountOffsets : global::UnityEngine.MonoBehaviour {
+    [SerializeField] public global::Kingmaker.Visual.Mounts.RaceMountOffsetsConfig OffsetsConfig /* Kingmaker.Visual.Mounts.RaceMountOffsetsConfig */;
+    public global::Kingmaker.Visual.Mounts.RaceMountOffsetsConfig MediumOffsetsConfig /* Kingmaker.Visual.Mounts.RaceMountOffsetsConfig */;
+    public global::Kingmaker.Visual.Mounts.RaceMountOffsetsConfig LargeOffsetsConfig /* Kingmaker.Visual.Mounts.RaceMountOffsetsConfig */;
+    public global::Kingmaker.Visual.Mounts.RaceMountOffsetsConfig HugeOffsetsConfig /* Kingmaker.Visual.Mounts.RaceMountOffsetsConfig */;
+    public global::UnityEngine.Transform Root /* UnityEngine.Transform */;
+    public global::UnityEngine.Transform RootBattle /* UnityEngine.Transform */;
+    public global::UnityEngine.Transform PelvisIkTarget /* UnityEngine.Transform */;
+    public global::UnityEngine.Transform LeftFootIkTarget /* UnityEngine.Transform */;
+    public global::UnityEngine.Transform LeftKneeIkTarget /* UnityEngine.Transform */;
+    public global::UnityEngine.Transform RightFootIkTarget /* UnityEngine.Transform */;
+    public global::UnityEngine.Transform RightKneeIkTarget /* UnityEngine.Transform */;
+    public global::UnityEngine.Transform Hands /* UnityEngine.Transform */;
     public float PelvisPositionWeight /* System.Single */;
     public float PelvisRotationWeight /* System.Single */;
     public float FootsPositionWeight /* System.Single */;

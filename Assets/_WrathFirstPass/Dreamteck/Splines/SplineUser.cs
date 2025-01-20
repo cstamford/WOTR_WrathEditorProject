@@ -3,11 +3,11 @@ using UnityEngine;
 
 namespace Dreamteck.Splines {
 
-public class SplineUser : MonoBehaviour {
+public class SplineUser : global::UnityEngine.MonoBehaviour {
     public object _address /* Dreamteck.Splines.SplineAddress */;
     [SerializeField] public object subscribers /* Dreamteck.Splines.SplineUser[] */;
-    public SplineUser.UpdateMethod updateMethod /* Dreamteck.Splines.UpdateMethod */;
-    [SerializeField] public SplineUser _user /* Dreamteck.Splines.SplineUser */;
+    public global::Dreamteck.Splines.SplineUser.UpdateMethod updateMethod /* Dreamteck.Splines.UpdateMethod */;
+    [SerializeField] public global::Dreamteck.Splines.SplineUser _user /* Dreamteck.Splines.SplineUser */;
     [SerializeField] public double _resolution /* System.Double */;
     [SerializeField] public double _clipTo /* System.Double */;
     [SerializeField] public double _clipFrom /* System.Double */;

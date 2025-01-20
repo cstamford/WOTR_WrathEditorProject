@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.Utility {
 
-public class NotAScript : ScriptableObject {
+public class NotAScript : global::UnityEngine.ScriptableObject {
 }
 
 }

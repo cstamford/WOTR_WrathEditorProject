@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace DungeonArchitect {
 
-public class FXMarker : MonoBehaviour {
+public class FXMarker : global::UnityEngine.MonoBehaviour {
     public object fxType /* DungeonArchitect.FxMarkerType */;
 }
 

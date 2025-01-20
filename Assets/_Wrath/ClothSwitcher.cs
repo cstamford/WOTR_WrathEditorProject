@@ -1,5 +1,6 @@
+using System;
 using UnityEngine;
 
-public class ClothSwitcher : MonoBehaviour {
+public class ClothSwitcher : global::UnityEngine.MonoBehaviour {
 }
 

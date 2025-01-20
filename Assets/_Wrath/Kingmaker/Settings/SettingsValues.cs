@@ -1,13 +1,14 @@
 using Kingmaker.Settings.Difficulty;
 using Kingmaker.Settings.Graphics;
+using System;
 using UnityEngine;
 
 namespace Kingmaker.Settings {
 
-public class SettingsValues : ScriptableObject {
+public class SettingsValues : global::UnityEngine.ScriptableObject {
     public object SettingsDefaultValues /* Kingmaker.Settings.SettingsDefaultValues */;
-    public DifficultyPresetsList DifficultiesPresets /* Kingmaker.Settings.Difficulty.DifficultyPresetsList */;
-    public GraphicsPresetsList GraphicsPresetsList /* Kingmaker.Settings.Graphics.GraphicsPresetsList */;
+    public global::Kingmaker.Settings.Difficulty.DifficultyPresetsList DifficultiesPresets /* Kingmaker.Settings.Difficulty.DifficultyPresetsList */;
+    public global::Kingmaker.Settings.Graphics.GraphicsPresetsList GraphicsPresetsList /* Kingmaker.Settings.Graphics.GraphicsPresetsList */;
 }
 
 }

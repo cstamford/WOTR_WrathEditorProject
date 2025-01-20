@@ -1,11 +1,12 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.Visual.Particles {
 
-public class LowResParticlesRenderer : MonoBehaviour {
-    public LayerMask CullingMask /* UnityEngine.LayerMask */;
-    public LowResParticlesRenderer.Downscale DownscaleValue /* Kingmaker.Visual.Particles.Downscale */;
-    public Shader LowResParticlesShader /* UnityEngine.Shader */;
+public class LowResParticlesRenderer : global::UnityEngine.MonoBehaviour {
+    public global::UnityEngine.LayerMask CullingMask /* UnityEngine.LayerMask */;
+    public global::Kingmaker.Visual.Particles.LowResParticlesRenderer.Downscale DownscaleValue /* Kingmaker.Visual.Particles.Downscale */;
+    public global::UnityEngine.Shader LowResParticlesShader /* UnityEngine.Shader */;
 
     public enum Downscale {
         Downscale2x2 = 2,

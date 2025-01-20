@@ -1,11 +1,12 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.UI.Group {
 
-public class GroupManagerBase : MonoBehaviour {
-    [SerializeField] public Transform ActiveCompanions /* UnityEngine.Transform */;
-    [SerializeField] public Transform RemoteCompanions /* UnityEngine.Transform */;
-    [SerializeField] public GroupManagerCharacter m_Character /* Kingmaker.UI.Group.GroupManagerCharacter */;
+public class GroupManagerBase : global::UnityEngine.MonoBehaviour {
+    [SerializeField] public global::UnityEngine.Transform ActiveCompanions /* UnityEngine.Transform */;
+    [SerializeField] public global::UnityEngine.Transform RemoteCompanions /* UnityEngine.Transform */;
+    [SerializeField] public global::Kingmaker.UI.Group.GroupManagerCharacter m_Character /* Kingmaker.UI.Group.GroupManagerCharacter */;
 }
 
 }

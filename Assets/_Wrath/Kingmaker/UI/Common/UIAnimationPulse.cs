@@ -3,8 +3,8 @@ using UnityEngine;
 
 namespace Kingmaker.UI.Common {
 
-public class UIAnimationPulse : MonoBehaviour {
-    public Vector3 Scale /* UnityEngine.Vector3 */;
+public class UIAnimationPulse : global::UnityEngine.MonoBehaviour {
+    public global::UnityEngine.Vector3 Scale /* UnityEngine.Vector3 */;
     public float Time /* System.Single */;
 }
 

@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.Visual.LocalMap {
 
-public class LocalMapLight : MonoBehaviour {
+public class LocalMapLight : global::UnityEngine.MonoBehaviour {
 }
 
 }

@@ -1,10 +1,11 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.UI.Settlement {
 
-public class SettlementSceneAnchors : MonoBehaviour {
-    public Transform BaseAnchor /* UnityEngine.Transform */;
-    public Transform BuildAnchor /* UnityEngine.Transform */;
+public class SettlementSceneAnchors : global::UnityEngine.MonoBehaviour {
+    public global::UnityEngine.Transform BaseAnchor /* UnityEngine.Transform */;
+    public global::UnityEngine.Transform BuildAnchor /* UnityEngine.Transform */;
 }
 
 }

@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Kingmaker.UI.Common.Animations {
 
-public class ColorAnimator : MonoBehaviour {
+public class ColorAnimator : global::UnityEngine.MonoBehaviour {
     public _2dxFX_ColorChange ColorChangeFxObject /* ._2dxFX_ColorChange */;
     public float AnimationTime /* System.Single */;
     public float SaturationAppearValue /* System.Single */;

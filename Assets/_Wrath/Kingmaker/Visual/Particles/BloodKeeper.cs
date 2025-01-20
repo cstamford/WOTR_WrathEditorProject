@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.Visual.Particles {
 
-public class BloodKeeper : MonoBehaviour {
+public class BloodKeeper : global::UnityEngine.MonoBehaviour {
 }
 
 }

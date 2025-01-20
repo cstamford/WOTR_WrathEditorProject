@@ -3,8 +3,8 @@ using UnityEngine;
 
 namespace Kingmaker.View {
 
-public class CameraZoom : MonoBehaviour {
-    [SerializeField] public Camera m_Camera /* UnityEngine.Camera */;
+public class CameraZoom : global::UnityEngine.MonoBehaviour {
+    [SerializeField] public global::UnityEngine.Camera m_Camera /* UnityEngine.Camera */;
     [SerializeField] public float m_ZoomLenght /* System.Single */;
     [SerializeField] public float m_Smooth /* System.Single */;
     [SerializeField] public float m_ScrollSpeed /* System.Single */;

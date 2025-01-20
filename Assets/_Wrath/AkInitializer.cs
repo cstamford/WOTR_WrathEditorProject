@@ -1,6 +1,7 @@
+using System;
 using UnityEngine;
 
-public class AkInitializer : MonoBehaviour {
-    public object InitializationSettings /* .AkWwiseInitializationSettings */;
+public class AkInitializer : global::UnityEngine.MonoBehaviour {
+    public AkWwiseInitializationSettings InitializationSettings /* .AkWwiseInitializationSettings */;
 }
 

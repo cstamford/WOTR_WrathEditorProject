@@ -1,8 +1,8 @@
 using System;
 using UnityEngine;
 
-public class RimLightSettings : MonoBehaviour {
-    public Color RimColor /* UnityEngine.Color */;
+public class RimLightSettings : global::UnityEngine.MonoBehaviour {
+    public global::UnityEngine.Color RimColor /* UnityEngine.Color */;
     public float RimIntensity /* System.Single */;
 }
 

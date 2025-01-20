@@ -3,12 +3,12 @@ using UnityEngine;
 
 namespace Kingmaker.Assets.Visual {
 
-public class FlickeringLight : MonoBehaviour {
+public class FlickeringLight : global::UnityEngine.MonoBehaviour {
     public float IterationInterval /* System.Single */;
-    public FlickeringLight.FlickerinLightStyles FlickeringLightStyle /* Kingmaker.Assets.Visual.FlickerinLightStyles */;
-    public FlickeringLight.CampfireMethods CampfireMethod /* Kingmaker.Assets.Visual.CampfireMethods */;
-    public FlickeringLight.CampfireIntesityStyles CampfireIntesityStyle /* Kingmaker.Assets.Visual.CampfireIntesityStyles */;
-    public FlickeringLight.CampfireRangeStyles CampfireRangeStyle /* Kingmaker.Assets.Visual.CampfireRangeStyles */;
+    public global::Kingmaker.Assets.Visual.FlickeringLight.FlickerinLightStyles FlickeringLightStyle /* Kingmaker.Assets.Visual.FlickerinLightStyles */;
+    public global::Kingmaker.Assets.Visual.FlickeringLight.CampfireMethods CampfireMethod /* Kingmaker.Assets.Visual.CampfireMethods */;
+    public global::Kingmaker.Assets.Visual.FlickeringLight.CampfireIntesityStyles CampfireIntesityStyle /* Kingmaker.Assets.Visual.CampfireIntesityStyles */;
+    public global::Kingmaker.Assets.Visual.FlickeringLight.CampfireRangeStyles CampfireRangeStyle /* Kingmaker.Assets.Visual.CampfireRangeStyles */;
     public float CampfireIntensityBaseValue /* System.Single */;
     public float CampfireIntensityFlickerValue /* System.Single */;
     public float CampfireRangeBaseValue /* System.Single */;

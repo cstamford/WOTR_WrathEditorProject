@@ -3,10 +3,10 @@ using UnityEngine;
 
 namespace Kingmaker.Visual.Sound {
 
-public class SoundFx : MonoBehaviour {
+public class SoundFx : global::UnityEngine.MonoBehaviour {
     public object EventsOnStart /* Kingmaker.Visual.Sound.SlotType[] */;
     public object EventsOnDestroy /* Kingmaker.Visual.Sound.SlotType[] */;
-    public SoundFx Prefab /* Kingmaker.Visual.Sound.SoundFx */;
+    public global::Kingmaker.Visual.Sound.SoundFx Prefab /* Kingmaker.Visual.Sound.SoundFx */;
 
     public class SlotType {
         public string Event /* System.String */;

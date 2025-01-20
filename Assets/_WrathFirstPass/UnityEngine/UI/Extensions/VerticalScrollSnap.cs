@@ -3,10 +3,10 @@ using UnityEngine;
 
 namespace UnityEngine.UI.Extensions {
 
-public class VerticalScrollSnap : MonoBehaviour {
-    public GameObject Pagination /* UnityEngine.GameObject */;
-    public GameObject NextButton /* UnityEngine.GameObject */;
-    public GameObject PrevButton /* UnityEngine.GameObject */;
+public class VerticalScrollSnap : global::UnityEngine.MonoBehaviour {
+    public global::UnityEngine.GameObject Pagination /* UnityEngine.GameObject */;
+    public global::UnityEngine.GameObject NextButton /* UnityEngine.GameObject */;
+    public global::UnityEngine.GameObject PrevButton /* UnityEngine.GameObject */;
     public float transitionSpeed /* System.Single */;
     public bool UseFastSwipe /* System.Boolean */;
     public int FastSwipeThreshold /* System.Int32 */;

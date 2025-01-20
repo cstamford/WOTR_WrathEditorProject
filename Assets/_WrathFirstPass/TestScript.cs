@@ -1,12 +1,12 @@
 using System;
 using UnityEngine;
 
-public class TestScript : MonoBehaviour {
+public class TestScript : global::UnityEngine.MonoBehaviour {
     public string testString /* System.String */;
-    public GameObject someGameObject /* UnityEngine.GameObject */;
+    public global::UnityEngine.GameObject someGameObject /* UnityEngine.GameObject */;
     public string someGameObject_id /* System.String */;
     public object testClass /* .TestClass */;
     public object testClassArray /* .TestClass[] */;
-    public Transform TransformThatWontBeSaved /* UnityEngine.Transform */;
+    public global::UnityEngine.Transform TransformThatWontBeSaved /* UnityEngine.Transform */;
 }
 

@@ -4,9 +4,9 @@ using UnityEngine;
 
 namespace Kingmaker.AreaLogic.AlushenyrraIsles {
 
-public class IsleStateAudioSender : MonoBehaviour {
-    [SerializeField] public Animator m_IsleAnimator /* UnityEngine.Animator */;
-    [SerializeField] public List<IsleStateAudioSender.SoundState> m_States /* System.Collections.Generic.List<Kingmaker.AreaLogic.AlushenyrraIsles.SoundState> */;
+public class IsleStateAudioSender : global::UnityEngine.MonoBehaviour {
+    [SerializeField] public global::UnityEngine.Animator m_IsleAnimator /* UnityEngine.Animator */;
+    [SerializeField] public global::System.Collections.Generic.List<global::Kingmaker.AreaLogic.AlushenyrraIsles.IsleStateAudioSender.SoundState> m_States /* System.Collections.Generic.List<Kingmaker.AreaLogic.AlushenyrraIsles.SoundState> */;
 
     public class SoundState {
         public int AnimatorHash /* System.Int32 */;

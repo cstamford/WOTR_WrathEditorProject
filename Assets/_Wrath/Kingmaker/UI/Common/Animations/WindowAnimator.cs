@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Kingmaker.UI.Common.Animations {
 
-public class WindowAnimator : MonoBehaviour {
+public class WindowAnimator : global::UnityEngine.MonoBehaviour {
     public int Angle /* System.Int32 */;
     [SerializeField] public float m_AppearTime /* System.Single */;
     [SerializeField] public object m_AppearAnimCurve /* DG.Tweening.Ease */;

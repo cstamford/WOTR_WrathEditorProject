@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.UI {
 
-public class UICanvas : MonoBehaviour {
+public class UICanvas : global::UnityEngine.MonoBehaviour {
 }
 
 }

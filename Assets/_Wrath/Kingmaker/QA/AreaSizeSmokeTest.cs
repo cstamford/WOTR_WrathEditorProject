@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Kingmaker.QA {
 
-public class AreaSizeSmokeTest : MonoBehaviour {
+public class AreaSizeSmokeTest : global::UnityEngine.MonoBehaviour {
     public string SceneName /* System.String */;
 }
 

@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.Visual.MaterialEffects {
 
-public class MarkDoNotCloneMaterial : MonoBehaviour {
+public class MarkDoNotCloneMaterial : global::UnityEngine.MonoBehaviour {
 }
 
 }

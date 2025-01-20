@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.RazerChroma {
 
-public class RazerMenuIdleAnimation : MonoBehaviour {
+public class RazerMenuIdleAnimation : global::UnityEngine.MonoBehaviour {
 }
 
 }

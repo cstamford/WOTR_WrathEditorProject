@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Kingmaker.UI.Kingdom {
 
-public class InfoMoveBaseContent : MonoBehaviour {
+public class InfoMoveBaseContent : global::UnityEngine.MonoBehaviour {
     public bool ChangePosY /* System.Boolean */;
     [SerializeField] public int m_ExpandPosY /* System.Int32 */;
     [SerializeField] public int m_CollapsePosY /* System.Int32 */;

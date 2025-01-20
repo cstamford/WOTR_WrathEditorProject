@@ -1,22 +1,23 @@
 using Kingmaker.UI.Tooltip;
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace Kingmaker.UI.Group {
 
-public class CharacterBase : MonoBehaviour {
-    public Slider Health /* UnityEngine.UI.Slider */;
-    public GroupCharacterBuffs Buffs /* Kingmaker.UI.Group.GroupCharacterBuffs */;
-    public GroupCharacterPortraitController Portrait /* Kingmaker.UI.Group.GroupCharacterPortraitController */;
-    [SerializeField] public Transform LevelUpButton /* UnityEngine.Transform */;
-    [SerializeField] public GameObject EncumbranceIndiacator /* UnityEngine.GameObject */;
-    [SerializeField] public Color EncumbranceHeavyLoad /* UnityEngine.Color */;
-    [SerializeField] public Color EncumbranceOwerload /* UnityEngine.Color */;
-    [SerializeField] public Image PesonalEncumbranceIcon /* UnityEngine.UI.Image */;
-    [SerializeField] public Image PartyEncumbranceIcon /* UnityEngine.UI.Image */;
-    [SerializeField] public GameObject PesonalEncumbranceObject /* UnityEngine.GameObject */;
-    [SerializeField] public GameObject PartyEncumbranceObject /* UnityEngine.GameObject */;
-    [SerializeField] public TooltipTrigger EncumbranceTooltip /* Kingmaker.UI.Tooltip.TooltipTrigger */;
+public class CharacterBase : global::UnityEngine.MonoBehaviour {
+    public global::UnityEngine.UI.Slider Health /* UnityEngine.UI.Slider */;
+    public global::Kingmaker.UI.Group.GroupCharacterBuffs Buffs /* Kingmaker.UI.Group.GroupCharacterBuffs */;
+    public global::Kingmaker.UI.Group.GroupCharacterPortraitController Portrait /* Kingmaker.UI.Group.GroupCharacterPortraitController */;
+    [SerializeField] public global::UnityEngine.Transform LevelUpButton /* UnityEngine.Transform */;
+    [SerializeField] public global::UnityEngine.GameObject EncumbranceIndiacator /* UnityEngine.GameObject */;
+    [SerializeField] public global::UnityEngine.Color EncumbranceHeavyLoad /* UnityEngine.Color */;
+    [SerializeField] public global::UnityEngine.Color EncumbranceOwerload /* UnityEngine.Color */;
+    [SerializeField] public global::UnityEngine.UI.Image PesonalEncumbranceIcon /* UnityEngine.UI.Image */;
+    [SerializeField] public global::UnityEngine.UI.Image PartyEncumbranceIcon /* UnityEngine.UI.Image */;
+    [SerializeField] public global::UnityEngine.GameObject PesonalEncumbranceObject /* UnityEngine.GameObject */;
+    [SerializeField] public global::UnityEngine.GameObject PartyEncumbranceObject /* UnityEngine.GameObject */;
+    [SerializeField] public global::Kingmaker.UI.Tooltip.TooltipTrigger EncumbranceTooltip /* Kingmaker.UI.Tooltip.TooltipTrigger */;
 }
 
 }

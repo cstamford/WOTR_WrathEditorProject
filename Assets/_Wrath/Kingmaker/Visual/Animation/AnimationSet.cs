@@ -5,11 +5,11 @@ using UnityEngine;
 
 namespace Kingmaker.Visual.Animation {
 
-public class AnimationSet : ScriptableObject {
-    [SerializeField] public AnimationActionBase m_StartupAction /* Kingmaker.Visual.Animation.Actions.AnimationActionBase */;
-    [SerializeField] public List<AnimationActionBase> m_Actions /* System.Collections.Generic.List<Kingmaker.Visual.Animation.Actions.AnimationActionBase> */;
-    [SerializeField] public List<Transition> m_Transitions /* System.Collections.Generic.List<Kingmaker.Visual.Animation.Transition> */;
-    [SerializeField] public List<AnimationSet.AnimationSequence> m_Sequences /* System.Collections.Generic.List<Kingmaker.Visual.Animation.AnimationSequence> */;
+public class AnimationSet : global::UnityEngine.ScriptableObject {
+    [SerializeField] public global::Kingmaker.Visual.Animation.Actions.AnimationActionBase m_StartupAction /* Kingmaker.Visual.Animation.Actions.AnimationActionBase */;
+    [SerializeField] public global::System.Collections.Generic.List<global::Kingmaker.Visual.Animation.Actions.AnimationActionBase> m_Actions /* System.Collections.Generic.List<Kingmaker.Visual.Animation.Actions.AnimationActionBase> */;
+    [SerializeField] public global::System.Collections.Generic.List<global::Kingmaker.Visual.Animation.Transition> m_Transitions /* System.Collections.Generic.List<Kingmaker.Visual.Animation.Transition> */;
+    [SerializeField] public global::System.Collections.Generic.List<global::Kingmaker.Visual.Animation.AnimationSet.AnimationSequence> m_Sequences /* System.Collections.Generic.List<Kingmaker.Visual.Animation.AnimationSequence> */;
 
     public class AnimationSequenceAction {
         [SerializeField] public object UnitAnimationType /* Kingmaker.Visual.Animation.Kingmaker.UnitAnimationType */;
@@ -19,7 +19,7 @@ public class AnimationSet : ScriptableObject {
     }
 
     public class AnimationSequence {
-        [SerializeField] public List<AnimationSet.AnimationSequenceAction> Actions /* System.Collections.Generic.List<Kingmaker.Visual.Animation.AnimationSequenceAction> */;
+        [SerializeField] public global::System.Collections.Generic.List<global::Kingmaker.Visual.Animation.AnimationSet.AnimationSequenceAction> Actions /* System.Collections.Generic.List<Kingmaker.Visual.Animation.AnimationSequenceAction> */;
         [SerializeField] public float Probability /* System.Single */;
     }
 

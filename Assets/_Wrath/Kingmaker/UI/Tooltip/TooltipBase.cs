@@ -6,15 +6,15 @@ using UnityEngine.UI;
 
 namespace Kingmaker.UI.Tooltip {
 
-public class TooltipBase : MonoBehaviour {
+public class TooltipBase : global::UnityEngine.MonoBehaviour {
     public float HeightLimit /* System.Single */;
-    public GameObject Content /* UnityEngine.GameObject */;
-    public LayoutElement ContentWindowLayout /* UnityEngine.UI.LayoutElement */;
+    public global::UnityEngine.GameObject Content /* UnityEngine.GameObject */;
+    public global::UnityEngine.UI.LayoutElement ContentWindowLayout /* UnityEngine.UI.LayoutElement */;
     public bool AutoPosition /* System.Boolean */;
-    public FadeAnimator Animator /* Kingmaker.UI.Common.Animations.FadeAnimator */;
-    public HorizontalLayoutGroup LayoutGroup /* UnityEngine.UI.HorizontalLayoutGroup */;
+    public global::Kingmaker.UI.Common.Animations.FadeAnimator Animator /* Kingmaker.UI.Common.Animations.FadeAnimator */;
+    public global::UnityEngine.UI.HorizontalLayoutGroup LayoutGroup /* UnityEngine.UI.HorizontalLayoutGroup */;
     public float DefaultAnimationDelay /* System.Single */;
-    public List<Vector2> defaultPivots /* System.Collections.Generic.List<UnityEngine.Vector2> */;
+    public global::System.Collections.Generic.List<global::UnityEngine.Vector2> defaultPivots /* System.Collections.Generic.List<UnityEngine.Vector2> */;
 }
 
 }

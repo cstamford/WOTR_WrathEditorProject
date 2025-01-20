@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.UI.MVVM._PCView.Common.InputField {
 
-public class PCInputField : MonoBehaviour {
+public class PCInputField : global::UnityEngine.MonoBehaviour {
     [SerializeField] public object m_InputButton /* Owlcat.Runtime.UI.Controls.Button.OwlcatButton */;
     [SerializeField] public object m_EditLabel /* TMPro.TextMeshProUGUI */;
     [SerializeField] public object m_FieldResult /* TMPro.TextMeshProUGUI */;

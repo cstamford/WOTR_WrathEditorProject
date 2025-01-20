@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker {
 
-public class NavMeshDoNotUnloadScenes : MonoBehaviour {
+public class NavMeshDoNotUnloadScenes : global::UnityEngine.MonoBehaviour {
 }
 
 }

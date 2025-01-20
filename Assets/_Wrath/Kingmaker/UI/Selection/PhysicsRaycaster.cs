@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.UI.Selection {
 
-public class PhysicsRaycaster : MonoBehaviour {
+public class PhysicsRaycaster : global::UnityEngine.MonoBehaviour {
 }
 
 }

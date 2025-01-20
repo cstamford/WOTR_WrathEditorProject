@@ -1,10 +1,11 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.UI.Kingdom {
 
-public class KingdomUIResources : MonoBehaviour {
-    [SerializeField] public KingdomUIResource m_ResourcePrefab /* Kingmaker.UI.Kingdom.KingdomUIResource */;
-    [SerializeField] public RectTransform m_ResourceContainer /* UnityEngine.RectTransform */;
+public class KingdomUIResources : global::UnityEngine.MonoBehaviour {
+    [SerializeField] public global::Kingmaker.UI.Kingdom.KingdomUIResource m_ResourcePrefab /* Kingmaker.UI.Kingdom.KingdomUIResource */;
+    [SerializeField] public global::UnityEngine.RectTransform m_ResourceContainer /* UnityEngine.RectTransform */;
 }
 
 }

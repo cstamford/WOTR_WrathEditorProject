@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.Visual.Particles {
 
-public class LootFxParticles : MonoBehaviour {
+public class LootFxParticles : global::UnityEngine.MonoBehaviour {
 }
 
 }

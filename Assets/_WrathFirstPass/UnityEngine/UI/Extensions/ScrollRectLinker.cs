@@ -4,9 +4,9 @@ using UnityEngine.UI;
 
 namespace UnityEngine.UI.Extensions {
 
-public class ScrollRectLinker : MonoBehaviour {
+public class ScrollRectLinker : global::UnityEngine.MonoBehaviour {
     public bool clamp /* System.Boolean */;
-    [SerializeField] public ScrollRect controllingScrollRect /* UnityEngine.UI.ScrollRect */;
+    [SerializeField] public global::UnityEngine.UI.ScrollRect controllingScrollRect /* UnityEngine.UI.ScrollRect */;
 }
 
 }

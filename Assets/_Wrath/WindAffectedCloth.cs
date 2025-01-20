@@ -1,5 +1,6 @@
+using System;
 using UnityEngine;
 
-public class WindAffectedCloth : MonoBehaviour {
+public class WindAffectedCloth : global::UnityEngine.MonoBehaviour {
 }
 

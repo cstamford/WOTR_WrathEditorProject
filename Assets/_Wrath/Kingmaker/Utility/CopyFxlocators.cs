@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.Utility {
 
-public class CopyFxlocators : MonoBehaviour {
+public class CopyFxlocators : global::UnityEngine.MonoBehaviour {
 }
 
 }

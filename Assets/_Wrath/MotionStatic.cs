@@ -1,5 +1,6 @@
+using System;
 using UnityEngine;
 
-public class MotionStatic : MonoBehaviour {
+public class MotionStatic : global::UnityEngine.MonoBehaviour {
 }
 

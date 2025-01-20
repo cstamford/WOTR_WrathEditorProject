@@ -1,5 +1,6 @@
+using System;
 using UnityEngine;
 
-public class AkTriggerBase : MonoBehaviour {
+public class AkTriggerBase : global::UnityEngine.MonoBehaviour {
 }
 

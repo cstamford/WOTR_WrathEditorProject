@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.Settings.Graphics {
 
-public class CameraAntialiasingHelper : MonoBehaviour {
+public class CameraAntialiasingHelper : global::UnityEngine.MonoBehaviour {
 }
 
 }

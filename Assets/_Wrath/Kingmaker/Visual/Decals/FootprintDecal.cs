@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.Visual.Decals {
 
-public class FootprintDecal : MonoBehaviour {
+public class FootprintDecal : global::UnityEngine.MonoBehaviour {
 }
 
 }

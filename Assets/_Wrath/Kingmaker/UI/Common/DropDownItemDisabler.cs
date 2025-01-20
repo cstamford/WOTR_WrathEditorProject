@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.UI.Common {
 
-public class DropDownItemDisabler : MonoBehaviour {
+public class DropDownItemDisabler : global::UnityEngine.MonoBehaviour {
 }
 
 }

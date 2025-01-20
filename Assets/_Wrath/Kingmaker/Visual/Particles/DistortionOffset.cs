@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.Visual.Particles {
 
-public class DistortionOffset : MonoBehaviour {
+public class DistortionOffset : global::UnityEngine.MonoBehaviour {
 }
 
 }

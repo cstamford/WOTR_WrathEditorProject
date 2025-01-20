@@ -1,8 +1,16 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.Visual.CharacterSystem {
 
-public class CharacterStudio : MonoBehaviour {
+public class CharacterStudio : global::UnityEngine.MonoBehaviour {
+
+    public enum Gender {
+        Male = 0,
+        Female = 1,
+        None = 2,
+        NotDetermined = 3,
+    }
 
     public enum Race {
         Human = 0,

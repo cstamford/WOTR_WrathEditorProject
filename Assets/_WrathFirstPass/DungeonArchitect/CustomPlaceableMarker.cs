@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace DungeonArchitect {
 
-public class CustomPlaceableMarker : MonoBehaviour {
+public class CustomPlaceableMarker : global::UnityEngine.MonoBehaviour {
     public string markerName /* System.String */;
 }
 

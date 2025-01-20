@@ -1,5 +1,6 @@
+using System;
 using UnityEngine;
 
-public class LocatorMarker : MonoBehaviour {
+public class LocatorMarker : global::UnityEngine.MonoBehaviour {
 }
 

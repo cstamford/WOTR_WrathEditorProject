@@ -1,9 +1,10 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.Visual.CityBuilder {
 
-public class CityBuilderTerrain : MonoBehaviour {
-    public LayerMask RaycastMask /* UnityEngine.LayerMask */;
+public class CityBuilderTerrain : global::UnityEngine.MonoBehaviour {
+    public global::UnityEngine.LayerMask RaycastMask /* UnityEngine.LayerMask */;
 }
 
 }

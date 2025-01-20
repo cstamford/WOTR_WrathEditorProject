@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.Controllers.Optimization {
 
-public class EntityDataLink : MonoBehaviour {
+public class EntityDataLink : global::UnityEngine.MonoBehaviour {
 }
 
 }

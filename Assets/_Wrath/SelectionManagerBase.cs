@@ -1,6 +1,8 @@
+using Kingmaker.UI.Selection;
+using System;
 using UnityEngine;
 
-public class SelectionManagerBase : MonoBehaviour {
-    [SerializeField] public object m_SelectionMarkPrefab /* Kingmaker.UI.Selection.CharacterUIDecal */;
+public class SelectionManagerBase : global::UnityEngine.MonoBehaviour {
+    [SerializeField] public global::Kingmaker.UI.Selection.CharacterUIDecal m_SelectionMarkPrefab /* Kingmaker.UI.Selection.CharacterUIDecal */;
 }
 

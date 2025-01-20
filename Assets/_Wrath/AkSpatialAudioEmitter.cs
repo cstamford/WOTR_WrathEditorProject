@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class AkSpatialAudioEmitter : MonoBehaviour {
+public class AkSpatialAudioEmitter : global::UnityEngine.MonoBehaviour {
     public object reflectAuxBus /* AK.Wwise.AuxBus */;
     public float reflectionMaxPathLength /* System.Single */;
     public float reflectionsAuxBusGain /* System.Single */;

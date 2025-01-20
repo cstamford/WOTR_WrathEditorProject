@@ -3,10 +3,10 @@ using UnityEngine;
 
 namespace Kingmaker.UI.ActionBar {
 
-public class ActionBarAutoUsePanel : MonoBehaviour {
+public class ActionBarAutoUsePanel : global::UnityEngine.MonoBehaviour {
     public int HidePosX /* System.Int32 */;
     public int ShowPosX /* System.Int32 */;
-    public object Slot /* Kingmaker.UI.ActionBar.ActionBarGroupSlot */;
+    public global::Kingmaker.UI.ActionBar.ActionBarGroupSlot Slot /* Kingmaker.UI.ActionBar.ActionBarGroupSlot */;
 }
 
 }

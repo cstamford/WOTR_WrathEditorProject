@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace UnityEngine.UI.Extensions {
 
-public class UIWindowBase : MonoBehaviour {
+public class UIWindowBase : global::UnityEngine.MonoBehaviour {
     public int KeepWindowInCanvas /* System.Int32 */;
 }
 

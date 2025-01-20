@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.Achievements.Platforms {
 
-public class GogAchievementsManager : MonoBehaviour {
+public class GogAchievementsManager : global::UnityEngine.MonoBehaviour {
 }
 
 }

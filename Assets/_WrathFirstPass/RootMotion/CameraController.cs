@@ -3,10 +3,10 @@ using UnityEngine;
 
 namespace RootMotion {
 
-public class CameraController : MonoBehaviour {
-    public Transform target /* UnityEngine.Transform */;
-    public Transform rotationSpace /* UnityEngine.Transform */;
-    public CameraController.UpdateMode updateMode /* RootMotion.UpdateMode */;
+public class CameraController : global::UnityEngine.MonoBehaviour {
+    public global::UnityEngine.Transform target /* UnityEngine.Transform */;
+    public global::UnityEngine.Transform rotationSpace /* UnityEngine.Transform */;
+    public global::RootMotion.CameraController.UpdateMode updateMode /* RootMotion.UpdateMode */;
     public bool lockCursor /* System.Boolean */;
     public bool smoothFollow /* System.Boolean */;
     public float followSpeed /* System.Single */;
@@ -18,7 +18,7 @@ public class CameraController : MonoBehaviour {
     public float rotationSensitivity /* System.Single */;
     public float yMinLimit /* System.Single */;
     public float yMaxLimit /* System.Single */;
-    public Vector3 offset /* UnityEngine.Vector3 */;
+    public global::UnityEngine.Vector3 offset /* UnityEngine.Vector3 */;
     public bool rotateAlways /* System.Boolean */;
     public bool rotateOnLeftButton /* System.Boolean */;
     public bool rotateOnRightButton /* System.Boolean */;

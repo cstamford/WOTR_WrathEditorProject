@@ -3,15 +3,15 @@ using UnityEngine;
 
 namespace Dreamteck.Splines {
 
-public class SplineComputer : MonoBehaviour {
+public class SplineComputer : global::UnityEngine.MonoBehaviour {
     [SerializeField] public object spline /* Dreamteck.Splines.Spline */;
-    [SerializeField] public SplineComputer.Morph _morph /* Dreamteck.Splines.Morph */;
-    [SerializeField] public SplineComputer.Space _space /* Dreamteck.Splines.Space */;
+    [SerializeField] public global::Dreamteck.Splines.SplineComputer.Morph _morph /* Dreamteck.Splines.Morph */;
+    [SerializeField] public global::Dreamteck.Splines.SplineComputer.Space _space /* Dreamteck.Splines.Space */;
     [SerializeField] public object subscribers /* Dreamteck.Splines.SplineUser[] */;
     [SerializeField] public object _nodeLinks /* Dreamteck.Splines.NodeLink[] */;
 
     public class NodeLink {
-        public object node /* Dreamteck.Splines.Node */;
+        public global::Dreamteck.Splines.Node node /* Dreamteck.Splines.Node */;
         public int pointIndex /* System.Int32 */;
     }
 
@@ -21,7 +21,7 @@ public class SplineComputer : MonoBehaviour {
     }
 
     public class Morph {
-        [SerializeField] public object computer /* Dreamteck.Splines.SplineComputer */;
+        [SerializeField] public global::Dreamteck.Splines.SplineComputer computer /* Dreamteck.Splines.SplineComputer */;
         [SerializeField] public object morphStates /* Dreamteck.Splines.SplineMorphState[] */;
         [SerializeField] public bool initialized /* System.Boolean */;
 

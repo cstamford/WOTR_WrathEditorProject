@@ -3,9 +3,9 @@ using UnityEngine;
 
 namespace Kingmaker.UI.Common {
 
-public class UIAnimationFly : MonoBehaviour {
+public class UIAnimationFly : global::UnityEngine.MonoBehaviour {
     public object Text /* TMPro.TextMeshProUGUI */;
-    public CanvasGroup CanvasGroup /* UnityEngine.CanvasGroup */;
+    public global::UnityEngine.CanvasGroup CanvasGroup /* UnityEngine.CanvasGroup */;
     public float Distance /* System.Single */;
     public float Time /* System.Single */;
 }

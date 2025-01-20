@@ -1,9 +1,10 @@
+using System;
 using UnityEngine;
 
 namespace RootMotion {
 
-public class TriggerEventBroadcaster : MonoBehaviour {
-    public GameObject target /* UnityEngine.GameObject */;
+public class TriggerEventBroadcaster : global::UnityEngine.MonoBehaviour {
+    public global::UnityEngine.GameObject target /* UnityEngine.GameObject */;
 }
 
 }

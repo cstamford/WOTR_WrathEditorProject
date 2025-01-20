@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace UnityEngine.UI.Extensions {
 
-public class ObjectIdentifier : MonoBehaviour {
+public class ObjectIdentifier : global::UnityEngine.MonoBehaviour {
     public string prefabName /* System.String */;
     public string id /* System.String */;
     public string idParent /* System.String */;

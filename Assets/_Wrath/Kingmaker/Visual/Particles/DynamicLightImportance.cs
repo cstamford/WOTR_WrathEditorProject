@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Kingmaker.Visual.Particles {
 
-public class DynamicLightImportance : MonoBehaviour {
+public class DynamicLightImportance : global::UnityEngine.MonoBehaviour {
     public int Importance /* System.Int32 */;
 }
 

@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.EOSSDK {
 
-public class EpicGamesManager : MonoBehaviour {
+public class EpicGamesManager : global::UnityEngine.MonoBehaviour {
 }
 
 }

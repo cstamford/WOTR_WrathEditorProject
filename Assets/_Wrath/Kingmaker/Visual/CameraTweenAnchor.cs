@@ -3,8 +3,8 @@ using UnityEngine;
 
 namespace Kingmaker.Visual {
 
-public class CameraTweenAnchor : MonoBehaviour {
-    [SerializeField] public CameraTweenAnchor.TweenData m_DefaultTween /* Kingmaker.Visual.TweenData */;
+public class CameraTweenAnchor : global::UnityEngine.MonoBehaviour {
+    [SerializeField] public global::Kingmaker.Visual.CameraTweenAnchor.TweenData m_DefaultTween /* Kingmaker.Visual.TweenData */;
     [SerializeField] public object m_Tweens /* Kingmaker.Visual.TweenDataWithPrev[] */;
 
     public class TweenData {
@@ -13,14 +13,14 @@ public class CameraTweenAnchor : MonoBehaviour {
         public float AnimationTime /* System.Single */;
         public bool UseEasing /* System.Boolean */;
         public bool SeparateCurves /* System.Boolean */;
-        public object PositionTrack /* .VectorSpline */;
-        public AnimationCurve PositionCurve /* UnityEngine.AnimationCurve */;
-        public object LootAtTrack /* .VectorSpline */;
-        public AnimationCurve LookAtCurve /* UnityEngine.AnimationCurve */;
+        public VectorSpline PositionTrack /* .VectorSpline */;
+        public global::UnityEngine.AnimationCurve PositionCurve /* UnityEngine.AnimationCurve */;
+        public VectorSpline LootAtTrack /* .VectorSpline */;
+        public global::UnityEngine.AnimationCurve LookAtCurve /* UnityEngine.AnimationCurve */;
     }
 
-    public class TweenDataWithPrev : CameraTweenAnchor.TweenData {
-        public object PreviousAnchor /* Kingmaker.Visual.CameraTweenAnchor */;
+    public class TweenDataWithPrev : global::Kingmaker.Visual.CameraTweenAnchor.TweenData {
+        public global::Kingmaker.Visual.CameraTweenAnchor PreviousAnchor /* Kingmaker.Visual.CameraTweenAnchor */;
     }
 
 }

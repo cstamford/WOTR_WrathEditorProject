@@ -4,8 +4,8 @@ using UnityEngine;
 
 namespace Kingmaker.Visual.CharacterSystem {
 
-public class RampColorPreset : ScriptableObject {
-    [SerializeField] public List<RampColorPreset.IndexSet> IndexPairs /* System.Collections.Generic.List<Kingmaker.Visual.CharacterSystem.IndexSet> */;
+public class RampColorPreset : global::UnityEngine.ScriptableObject {
+    [SerializeField] public global::System.Collections.Generic.List<global::Kingmaker.Visual.CharacterSystem.RampColorPreset.IndexSet> IndexPairs /* System.Collections.Generic.List<Kingmaker.Visual.CharacterSystem.IndexSet> */;
     public int PrimaryIndex /* System.Int32 */;
     public int SecondaryIndex /* System.Int32 */;
 

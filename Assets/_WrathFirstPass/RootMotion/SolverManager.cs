@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace RootMotion {
 
-public class SolverManager : MonoBehaviour {
+public class SolverManager : global::UnityEngine.MonoBehaviour {
     public bool fixTransforms /* System.Boolean */;
 }
 

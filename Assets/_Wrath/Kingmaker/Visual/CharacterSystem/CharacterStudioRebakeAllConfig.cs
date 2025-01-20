@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Kingmaker.Visual.CharacterSystem {
 
-public class CharacterStudioRebakeAllConfig : ScriptableObject {
+public class CharacterStudioRebakeAllConfig : global::UnityEngine.ScriptableObject {
     public string[] IncludePaths /* System.String[] */;
     public string[] ExcludePaths /* System.String[] */;
     public string[] IncludeOnlyCharacters /* System.String[] */;

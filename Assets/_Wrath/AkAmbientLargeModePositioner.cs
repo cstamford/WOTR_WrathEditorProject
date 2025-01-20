@@ -1,5 +1,6 @@
+using System;
 using UnityEngine;
 
-public class AkAmbientLargeModePositioner : MonoBehaviour {
+public class AkAmbientLargeModePositioner : global::UnityEngine.MonoBehaviour {
 }
 

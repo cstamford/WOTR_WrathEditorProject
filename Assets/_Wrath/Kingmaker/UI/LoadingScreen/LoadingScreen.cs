@@ -5,15 +5,15 @@ using UnityEngine.UI;
 
 namespace Kingmaker.UI.LoadingScreen {
 
-public class LoadingScreen : MonoBehaviour {
-    public object Hints /* Kingmaker.UI.LoadingScreen.LoadingScreenHints */;
+public class LoadingScreen : global::UnityEngine.MonoBehaviour {
+    public global::Kingmaker.UI.LoadingScreen.LoadingScreenHints Hints /* Kingmaker.UI.LoadingScreen.LoadingScreenHints */;
     public object Hint /* TMPro.TextMeshProUGUI */;
-    [SerializeField] public List<Image> m_Points /* System.Collections.Generic.List<UnityEngine.UI.Image> */;
-    public GameObject MapContainer /* UnityEngine.GameObject */;
-    public Image Picture /* UnityEngine.UI.Image */;
-    public Sprite TempLoadingPicture /* UnityEngine.Sprite */;
-    public List<LoadingScreen.SettingTypeScreens> SettingTypeScreensList /* System.Collections.Generic.List<Kingmaker.UI.LoadingScreen.SettingTypeScreens> */;
-    public Image CharacterPortrait /* UnityEngine.UI.Image */;
+    [SerializeField] public global::System.Collections.Generic.List<global::UnityEngine.UI.Image> m_Points /* System.Collections.Generic.List<UnityEngine.UI.Image> */;
+    public global::UnityEngine.GameObject MapContainer /* UnityEngine.GameObject */;
+    public global::UnityEngine.UI.Image Picture /* UnityEngine.UI.Image */;
+    public global::UnityEngine.Sprite TempLoadingPicture /* UnityEngine.Sprite */;
+    public global::System.Collections.Generic.List<global::Kingmaker.UI.LoadingScreen.LoadingScreen.SettingTypeScreens> SettingTypeScreensList /* System.Collections.Generic.List<Kingmaker.UI.LoadingScreen.SettingTypeScreens> */;
+    public global::UnityEngine.UI.Image CharacterPortrait /* UnityEngine.UI.Image */;
     public object CharacterNameText /* TMPro.TextMeshProUGUI */;
     public object CharacterDesctiptionText /* TMPro.TextMeshProUGUI */;
     public float FadeTime /* System.Single */;
@@ -25,7 +25,7 @@ public class LoadingScreen : MonoBehaviour {
 
     public class SettingTypeScreens {
         public object Type /* Kingmaker.Blueprints.Area.SettingType */;
-        public List<Sprite> Sprites /* System.Collections.Generic.List<UnityEngine.Sprite> */;
+        public global::System.Collections.Generic.List<global::UnityEngine.Sprite> Sprites /* System.Collections.Generic.List<UnityEngine.Sprite> */;
     }
 
 }

@@ -4,10 +4,10 @@ using UnityEngine.Events;
 
 namespace RootMotion.FinalIK {
 
-public class InteractionObject : MonoBehaviour {
-    public Transform otherLookAtTarget /* UnityEngine.Transform */;
-    public Transform otherTargetsRoot /* UnityEngine.Transform */;
-    public Transform positionOffsetSpace /* UnityEngine.Transform */;
+public class InteractionObject : global::UnityEngine.MonoBehaviour {
+    public global::UnityEngine.Transform otherLookAtTarget /* UnityEngine.Transform */;
+    public global::UnityEngine.Transform otherTargetsRoot /* UnityEngine.Transform */;
+    public global::UnityEngine.Transform positionOffsetSpace /* UnityEngine.Transform */;
     public object weightCurves /* RootMotion.FinalIK.WeightCurve[] */;
     public object multipliers /* RootMotion.FinalIK.Multiplier[] */;
     public object events /* RootMotion.FinalIK.InteractionEvent[] */;
@@ -18,17 +18,17 @@ public class InteractionObject : MonoBehaviour {
         public bool pickUp /* System.Boolean */;
         public object animations /* RootMotion.FinalIK.AnimatorEvent[] */;
         public object messages /* RootMotion.FinalIK.Message[] */;
-        public UnityEvent unityEvent /* UnityEngine.Events.UnityEvent */;
+        public global::UnityEngine.Events.UnityEvent unityEvent /* UnityEngine.Events.UnityEvent */;
     }
 
     public class Message {
         public string function /* System.String */;
-        public GameObject recipient /* UnityEngine.GameObject */;
+        public global::UnityEngine.GameObject recipient /* UnityEngine.GameObject */;
     }
 
     public class AnimatorEvent {
-        public Animator animator /* UnityEngine.Animator */;
-        public Animation animation /* UnityEngine.Animation */;
+        public global::UnityEngine.Animator animator /* UnityEngine.Animator */;
+        public global::UnityEngine.Animation animation /* UnityEngine.Animation */;
         public string animationState /* System.String */;
         public float crossfadeTime /* System.Single */;
         public int layer /* System.Int32 */;
@@ -36,8 +36,8 @@ public class InteractionObject : MonoBehaviour {
     }
 
     public class WeightCurve {
-        public InteractionObject.WeightCurve.Type type /* RootMotion.FinalIK.Type */;
-        public AnimationCurve curve /* UnityEngine.AnimationCurve */;
+        public global::RootMotion.FinalIK.InteractionObject.WeightCurve.Type type /* RootMotion.FinalIK.Type */;
+        public global::UnityEngine.AnimationCurve curve /* UnityEngine.AnimationCurve */;
 
         public enum Type {
             PositionWeight = 0,
@@ -56,9 +56,9 @@ public class InteractionObject : MonoBehaviour {
     }
 
     public class Multiplier {
-        public InteractionObject.WeightCurve.Type curve /* RootMotion.FinalIK.Type */;
+        public global::RootMotion.FinalIK.InteractionObject.WeightCurve.Type curve /* RootMotion.FinalIK.Type */;
         public float multiplier /* System.Single */;
-        public InteractionObject.WeightCurve.Type result /* RootMotion.FinalIK.Type */;
+        public global::RootMotion.FinalIK.InteractionObject.WeightCurve.Type result /* RootMotion.FinalIK.Type */;
     }
 
 }

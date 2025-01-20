@@ -167,7 +167,12 @@ public static class TypeGeneratorUtil {
 
     private static GeneratedTypeEnumDeclaration CreateEnum(Type type) {
         string[] names = type.GetEnumNames();
-        Array values = type.GetEnumValuesAsUnderlyingType();
+
+        long[] values = type.IsGenericParameter ? [] : [..type
+            .GetEnumValuesAsUnderlyingType()
+            .Cast<object>()
+            .Select(Convert.ToInt64)];
+
         return new GeneratedTypeEnumDeclaration(
             ReferencedType: type,
             BaseTypes: [],
@@ -195,10 +200,13 @@ public static class TypeGeneratorUtil {
     }
 
     private static IGeneratedTypeDeclaration CreateTypeWithFields(Dictionary<Type, IGeneratedType> lookup, Type type) {
-        List<IGeneratedType> baseTypes = [
-            type.BaseType != null ? CreateGeneratedType(lookup, type.BaseType) : null,
-            .. type.GetInterfaces().Select(x => CreateGeneratedType(lookup, x))
-        ];
+        List<IGeneratedType> baseTypes = [];
+
+        if (type.BaseType != null) {
+            baseTypes.Add(CreateGeneratedType(lookup, type.BaseType));
+        }
+
+        baseTypes.AddRange(type.GetInterfaces().Select(x => CreateGeneratedType(lookup, x)));
 
         List<IGeneratedField> fields = [..type
             .GetFields(BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.DeclaredOnly)
@@ -353,4 +361,8 @@ public static class TypeGeneratorUtil {
     private static HashSet<string> _excludedUnityNamespaces = [
         "UnityEngine.UI.Extensions" // paid package? lmao the name
     ];
+
+    public static bool HasBaseClass(this IGeneratedType type, string baseClassName) {
+        return type is GeneratedTypeDeclarationBase decl && decl.BaseTypes.Any(x => x.Name == baseClassName || HasBaseClass(x, baseClassName));
+    }
 }

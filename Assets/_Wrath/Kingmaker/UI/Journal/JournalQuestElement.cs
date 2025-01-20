@@ -1,18 +1,20 @@
+using Kingmaker.UI.Common;
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace Kingmaker.UI.Journal {
 
-public class JournalQuestElement : MonoBehaviour {
+public class JournalQuestElement : global::UnityEngine.MonoBehaviour {
     public object Description /* TMPro.TextMeshProUGUI */;
     public object Header /* TMPro.TextMeshProUGUI */;
     public object CompletionText /* TMPro.TextMeshProUGUI */;
-    public Image FailWax /* UnityEngine.UI.Image */;
-    public Image CompliteWax /* UnityEngine.UI.Image */;
-    public GameObject TimeToFailBlock /* UnityEngine.GameObject */;
+    public global::UnityEngine.UI.Image FailWax /* UnityEngine.UI.Image */;
+    public global::UnityEngine.UI.Image CompliteWax /* UnityEngine.UI.Image */;
+    public global::UnityEngine.GameObject TimeToFailBlock /* UnityEngine.GameObject */;
     public object TimeToFailLabel /* TMPro.TextMeshProUGUI */;
-    public object ObjectiveConent /* Kingmaker.UI.Common.ScrollRectExtended */;
-    public JournalQuestObjective QuestObjective /* Kingmaker.UI.Journal.JournalQuestObjective */;
+    public global::Kingmaker.UI.Common.ScrollRectExtended ObjectiveConent /* Kingmaker.UI.Common.ScrollRectExtended */;
+    public global::Kingmaker.UI.Journal.JournalQuestObjective QuestObjective /* Kingmaker.UI.Journal.JournalQuestObjective */;
 }
 
 }

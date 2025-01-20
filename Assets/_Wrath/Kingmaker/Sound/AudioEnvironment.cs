@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Kingmaker.Sound {
 
-public class AudioEnvironment : MonoBehaviour {
+public class AudioEnvironment : global::UnityEngine.MonoBehaviour {
     public bool ExcludeOthers /* System.Boolean */;
     public bool IsDefault /* System.Boolean */;
     public object Bus /* Kingmaker.Sound.AkAuxBusReference */;

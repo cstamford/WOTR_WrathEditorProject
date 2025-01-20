@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Kingmaker.Visual.CharacterSystem {
 
-public class CharacterFxBonesMap : ScriptableObject {
+public class CharacterFxBonesMap : global::UnityEngine.ScriptableObject {
     public float ParticleSizeScale /* System.Single */;
     public float SizeScale /* System.Single */;
     public float LifetimeScale /* System.Single */;

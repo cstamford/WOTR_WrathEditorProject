@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace UnityEngine.UI.Extensions {
 
-public class VRCursor : MonoBehaviour {
+public class VRCursor : global::UnityEngine.MonoBehaviour {
     public float xSens /* System.Single */;
     public float ySens /* System.Single */;
 }

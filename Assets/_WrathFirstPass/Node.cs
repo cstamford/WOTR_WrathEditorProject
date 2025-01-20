@@ -1,6 +1,7 @@
+using System;
 using UnityEngine;
 
-public class Node : MonoBehaviour {
-    public Color Color /* UnityEngine.Color */;
+public class Node : global::UnityEngine.MonoBehaviour {
+    public global::UnityEngine.Color Color /* UnityEngine.Color */;
 }
 

@@ -1,11 +1,12 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.UI.Common {
 
-public class UIDataProvider : ScriptableObject {
+public class UIDataProvider : global::UnityEngine.ScriptableObject {
     [SerializeField] public object m_DisplayName /* Kingmaker.Localization.LocalizedString */;
     [SerializeField] public object m_Description /* Kingmaker.Localization.LocalizedString */;
-    [SerializeField] public Sprite m_Icon /* UnityEngine.Sprite */;
+    [SerializeField] public global::UnityEngine.Sprite m_Icon /* UnityEngine.Sprite */;
 }
 
 }

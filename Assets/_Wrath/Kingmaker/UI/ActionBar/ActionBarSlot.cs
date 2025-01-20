@@ -4,16 +4,16 @@ using UnityEngine.UI;
 
 namespace Kingmaker.UI.ActionBar {
 
-public class ActionBarSlot : MonoBehaviour {
-    public Image BackgroundLayer /* UnityEngine.UI.Image */;
-    public Image Icon /* UnityEngine.UI.Image */;
-    public Image DecorationBorder /* UnityEngine.UI.Image */;
+public class ActionBarSlot : global::UnityEngine.MonoBehaviour {
+    public global::UnityEngine.UI.Image BackgroundLayer /* UnityEngine.UI.Image */;
+    public global::UnityEngine.UI.Image Icon /* UnityEngine.UI.Image */;
+    public global::UnityEngine.UI.Image DecorationBorder /* UnityEngine.UI.Image */;
     public object Count /* TMPro.TextMeshProUGUI */;
-    public Image ActiveMark /* UnityEngine.UI.Image */;
-    public Image Disable /* UnityEngine.UI.Image */;
-    public Color DefaultColor /* UnityEngine.Color */;
-    public Color RunningColor /* UnityEngine.Color */;
-    public Image IsCastingLayer /* UnityEngine.UI.Image */;
+    public global::UnityEngine.UI.Image ActiveMark /* UnityEngine.UI.Image */;
+    public global::UnityEngine.UI.Image Disable /* UnityEngine.UI.Image */;
+    public global::UnityEngine.Color DefaultColor /* UnityEngine.Color */;
+    public global::UnityEngine.Color RunningColor /* UnityEngine.Color */;
+    public global::UnityEngine.UI.Image IsCastingLayer /* UnityEngine.UI.Image */;
     public float SplashBasePosX /* System.Single */;
     public float SplashFinalPosX /* System.Single */;
 }

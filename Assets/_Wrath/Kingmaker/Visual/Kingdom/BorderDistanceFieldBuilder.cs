@@ -4,15 +4,15 @@ using UnityEngine;
 
 namespace Kingmaker.Visual.Kingdom {
 
-public class BorderDistanceFieldBuilder : MonoBehaviour {
+public class BorderDistanceFieldBuilder : global::UnityEngine.MonoBehaviour {
     public int Width /* System.Int32 */;
     public int Height /* System.Int32 */;
-    public Texture2D TextureAsset /* UnityEngine.Texture2D */;
-    public MeshRenderer Map /* UnityEngine.MeshRenderer */;
-    public object Spline /* .VectorSpline */;
+    public global::UnityEngine.Texture2D TextureAsset /* UnityEngine.Texture2D */;
+    public global::UnityEngine.MeshRenderer Map /* UnityEngine.MeshRenderer */;
+    public VectorSpline Spline /* .VectorSpline */;
     public float SplineResolution /* System.Single */;
     public float MaxDistance /* System.Single */;
-    public RegionObject Region /* Kingmaker.Kingdom.RegionObject */;
+    public global::Kingmaker.Kingdom.RegionObject Region /* Kingmaker.Kingdom.RegionObject */;
 }
 
 }

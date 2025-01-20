@@ -1,5 +1,6 @@
+using System;
 using UnityEngine;
 
-public class SecondScreen : MonoBehaviour {
+public class SecondScreen : global::UnityEngine.MonoBehaviour {
 }
 

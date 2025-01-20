@@ -4,11 +4,11 @@ using UnityEngine.UI;
 
 namespace Kingmaker.UI.Ping {
 
-public class PingHighlighter : MonoBehaviour {
+public class PingHighlighter : global::UnityEngine.MonoBehaviour {
     public bool IsActive /* System.Boolean */;
-    public PingHighlighter.TypeLit Lit /* Kingmaker.UI.Ping.TypeLit */;
-    public AnimationCurve CurveBlink /* UnityEngine.AnimationCurve */;
-    public Graphic TargetGraphic /* UnityEngine.UI.Graphic */;
+    public global::Kingmaker.UI.Ping.PingHighlighter.TypeLit Lit /* Kingmaker.UI.Ping.TypeLit */;
+    public global::UnityEngine.AnimationCurve CurveBlink /* UnityEngine.AnimationCurve */;
+    public global::UnityEngine.UI.Graphic TargetGraphic /* UnityEngine.UI.Graphic */;
 
     public enum TypeLit {
         Lit = 0,

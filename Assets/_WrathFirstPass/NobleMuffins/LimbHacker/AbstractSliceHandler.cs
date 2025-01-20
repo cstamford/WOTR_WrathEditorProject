@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace NobleMuffins.LimbHacker {
 
-public class AbstractSliceHandler : MonoBehaviour {
+public class AbstractSliceHandler : global::UnityEngine.MonoBehaviour {
 }
 
 }

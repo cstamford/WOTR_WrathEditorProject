@@ -1,11 +1,12 @@
 using Kingmaker.UI.ServiceWindow;
+using System;
 using UnityEngine;
 
 namespace Kingmaker.UI {
 
-public class UICommon : MonoBehaviour {
-    public DollRoom DollRoom /* Kingmaker.UI.ServiceWindow.DollRoom */;
-    public RectTransform[] FixedPositionTooltipAnchors /* UnityEngine.RectTransform[] */;
+public class UICommon : global::UnityEngine.MonoBehaviour {
+    public global::Kingmaker.UI.ServiceWindow.DollRoom DollRoom /* Kingmaker.UI.ServiceWindow.DollRoom */;
+    public global::UnityEngine.RectTransform[] FixedPositionTooltipAnchors /* UnityEngine.RectTransform[] */;
 }
 
 }

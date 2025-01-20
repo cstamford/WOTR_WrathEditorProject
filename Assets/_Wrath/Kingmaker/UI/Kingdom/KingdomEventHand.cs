@@ -3,8 +3,8 @@ using UnityEngine;
 
 namespace Kingmaker.UI.Kingdom {
 
-public class KingdomEventHand : MonoBehaviour {
-    [SerializeField] public KingdomEventHandCartController m_Cart /* Kingmaker.UI.Kingdom.KingdomEventHandCartController */;
+public class KingdomEventHand : global::UnityEngine.MonoBehaviour {
+    [SerializeField] public global::Kingmaker.UI.Kingdom.KingdomEventHandCartController m_Cart /* Kingmaker.UI.Kingdom.KingdomEventHandCartController */;
     public float Radius /* System.Single */;
     public float OffsetY /* System.Single */;
     public float HoverOffset /* System.Single */;

@@ -1,6 +1,5 @@
 ﻿using AssemblyImporter;
 using Microsoft.CodeAnalysis;
-using System.Diagnostics;
 using System.Reflection;
 
 if (args.Length != 2) {
@@ -20,13 +19,13 @@ Dictionary<AssemblyType, List<string>> assemblies = new() {
         "Assembly-CSharp-firstpass"
     ],
     [AssemblyType.Package] = [
-        "Owlcat.Runtime.Core",
-        "Owlcat.Runtime.Hardware",
-        "Owlcat.Runtime.UI",
-        "Owlcat.Runtime.UniRx",
-        "Owlcat.Runtime.Validation",
-        "Owlcat.Runtime.Visual",
-        "Owlcat.SharedTypes",
+        //"Owlcat.Runtime.Core",
+        //"Owlcat.Runtime.Hardware",
+        //"Owlcat.Runtime.UI",
+        //"Owlcat.Runtime.UniRx",
+        //"Owlcat.Runtime.Validation",
+        //"Owlcat.Runtime.Visual",
+        //"Owlcat.SharedTypes",
     ]
 };
 
@@ -46,17 +45,17 @@ Dictionary<Type, string> typeToAssembly = assemblyToLoadedTypes
     .SelectMany(x => x.Value.Select(y => (y, x.Key)))
     .ToDictionary(x => x.y, x => x.Key);
 
-List<IGeneratedTypeDeclaration> generatedTypes = Pass1_CreateTypes(ctx, assemblyToLoadedTypes.Values.SelectMany(x => x));
-Pass2_StripUnreferencedNestedTypes(generatedTypes);
+List<IGeneratedTypeDeclaration> allGeneratedTypes = CreateTypes(ctx, assemblyToLoadedTypes.Values.SelectMany(x => x));
+StripUnreferencedNestedTypes(allGeneratedTypes);
 
-List<IGeneratedTypeDeclaration> declaredTypes = Pass3_GetDeclaredTypes(generatedTypes);
-Pass4_ResolveForwardDeclarations(declaredTypes, generatedTypes);
+List<IGeneratedTypeDeclaration> workingSet = GetWorkingSet(allGeneratedTypes);
+List<IGeneratedTypeDeclaration> flattenedWorkingSet = GetFlattenedWorkingSet(workingSet);
 
-foreach (IGeneratedTypeDeclaration gen in generatedTypes) {
-    Pass5_SubstituteUnresolvedTypes(declaredTypes, gen);
+foreach (IGeneratedTypeDeclaration gen in workingSet) {
+    SwapMissingTypes(gen, flattenedWorkingSet);
 }
 
-Dictionary<string, IGeneratedTypeDeclaration> pathToTypeMap = generatedTypes.ToDictionary(
+Dictionary<string, IGeneratedTypeDeclaration> pathToTypeMap = workingSet.ToDictionary(
     x => {
         string assembly = typeToAssembly[x.ReferencedType];
         AssemblyType assemblyType = assemblyToAssemblyType[assembly];
@@ -92,7 +91,7 @@ Dictionary<string, IGeneratedTypeDeclaration> pathToTypeMap = generatedTypes.ToD
 
 foreach ((string path, IGeneratedTypeDeclaration type) in pathToTypeMap) {
     string fullPath = Path.Combine(pathToOutputDir, path);
-    Directory.CreateDirectory(Path.GetDirectoryName(fullPath));
+    Directory.CreateDirectory(Path.GetDirectoryName(fullPath)!);
 
     string output = GeneratedTypeFormatter.Format(type);
     if (File.Exists(fullPath) && File.ReadAllText(fullPath) == output) {
@@ -115,15 +114,12 @@ static IEnumerable<Type> TryLoadTypesFromAssembly(MetadataLoadContext ctx, strin
     }
 }
 
-static List<IGeneratedTypeDeclaration> Pass1_CreateTypes(MetadataLoadContext ctx, IEnumerable<Type> types) {
+static List<IGeneratedTypeDeclaration> CreateTypes(MetadataLoadContext ctx, IEnumerable<Type> types) {
     Dictionary<Type, IGeneratedType> generatedTypeLookup = [];
     List<IGeneratedTypeDeclaration> generatedTypes = [];
 
     foreach (Type type in types) {
-        if (type.Name == "OwlcatRenderPipelineAsset") {
-            Debugger.Break();
-        }
-        if (!type.IsGenericType && type.BaseType?.Name is "MonoBehaviour" or "ScriptableObject") {
+        if (!type.IsGenericType) {
             generatedTypes.Add((IGeneratedTypeDeclaration)GeneratedType.Create(generatedTypeLookup, type));
         }
     }
@@ -131,65 +127,63 @@ static List<IGeneratedTypeDeclaration> Pass1_CreateTypes(MetadataLoadContext ctx
     return generatedTypes;
 }
 
-static void Pass2_StripUnreferencedNestedTypes(List<IGeneratedTypeDeclaration> generatedTypes) {
+static void StripUnreferencedNestedTypes(List<IGeneratedTypeDeclaration> workingSet) {
     List<IGeneratedType> referencedTypesList = [];
 
-    foreach (IGeneratedTypeDeclaration gen in generatedTypes) {
+    foreach (IGeneratedTypeDeclaration gen in workingSet) {
         TypeGeneratorUtil.CollectListOfReferencedTypes(gen, referencedTypesList);
     }
 
     HashSet<Type> referencedTypesLookup = new(referencedTypesList.Select(x => x.ReferencedType));
 
-    foreach (IGeneratedTypeDeclaration gen in generatedTypes) {
-        gen.NestedTypes.RemoveAll(x => !referencedTypesLookup.Contains(x.ReferencedType));
-    }
-
-}
-
-static List<IGeneratedTypeDeclaration> Pass3_GetDeclaredTypes(List<IGeneratedTypeDeclaration> generatedTypes) {
-    List<IGeneratedTypeDeclaration> all = [];
-
-    foreach (IGeneratedTypeDeclaration gen in generatedTypes) {
-        TypeGeneratorUtil.CollectListOfDeclaredTypes(gen, all);
-    }
-
-    all = [.. all.DistinctBy(x => x.ReferencedType)];
-    return all;
-}
-
-static void Pass4_ResolveForwardDeclarations(List<IGeneratedTypeDeclaration> declaredTypes, List<IGeneratedTypeDeclaration> generatedTypes) {
-    foreach (IGeneratedTypeDeclaration gen in generatedTypes) {
+    foreach (IGeneratedTypeDeclaration type in workingSet) {
+        type.NestedTypes.RemoveAll(x => !referencedTypesLookup.Contains(x.ReferencedType));
     }
 }
 
-static void Pass5_SubstituteUnresolvedTypes(List<IGeneratedTypeDeclaration> declaredTypes, IGeneratedTypeDeclaration gen) {
-    for (int i = 0; i < gen.BaseTypes.Count; ++i) {
-        if (!IsTypeFullyResolved(declaredTypes, gen.BaseTypes[i])) {
-            gen.BaseTypes[i] = new GeneratedTypeForwardDecl(gen.BaseTypes[i].ReferencedType);
+static List<IGeneratedTypeDeclaration> GetWorkingSet(List<IGeneratedTypeDeclaration> allGeneratedTypes) {
+    return [.. allGeneratedTypes.Where(x => x.HasBaseClass("MonoBehaviour") || x.HasBaseClass("ScriptableObject"))];
+}
+
+static List<IGeneratedTypeDeclaration> GetFlattenedWorkingSet(List<IGeneratedTypeDeclaration> workingSet) {
+    List<IGeneratedTypeDeclaration> flattened = [];
+
+    foreach (IGeneratedTypeDeclaration type in workingSet) {
+        TypeGeneratorUtil.CollectListOfDeclaredTypes(type, flattened);
+    }
+
+    flattened = [.. flattened.DistinctBy(x => x.ReferencedType)];
+    return flattened;
+}
+
+static void SwapMissingTypes(IGeneratedTypeDeclaration type, List<IGeneratedTypeDeclaration> flattenedWorkingSet) {
+    for (int i = 0; i < type.BaseTypes.Count; ++i) {
+        if (!IsTypeFullyResolved(type.BaseTypes[i], flattenedWorkingSet)) {
+            type.BaseTypes[i] = new GeneratedTypeForwardDecl(type.BaseTypes[i].ReferencedType);
         }
     }
 
-    for (int i = 0; i < gen.Fields.Count; ++i) {
-        IGeneratedField field = gen.Fields[i];
+    for (int i = 0; i < type.Fields.Count; ++i) {
+        IGeneratedField field = type.Fields[i];
 
-        if (!IsFieldTypeFullyResolved(declaredTypes, field)) {
-            gen.Fields[i] = new GeneratedField(field.ReferencedField, new GeneratedTypeForwardDecl(field.Type.ReferencedType), field.Attributes);
+        if (!IsFieldTypeFullyResolved(field, flattenedWorkingSet)) {
+            type.Fields[i] = new GeneratedField(field.ReferencedField, new GeneratedTypeForwardDecl(field.Type.ReferencedType), field.Attributes);
         }
     }
 
-    foreach (IGeneratedTypeDeclaration nested in gen.NestedTypes) {
-        Pass5_SubstituteUnresolvedTypes(declaredTypes, nested);
+    foreach (IGeneratedTypeDeclaration nested in type.NestedTypes) {
+        SwapMissingTypes(nested, flattenedWorkingSet);
     }
 }
 
-static bool IsFieldTypeFullyResolved(List<IGeneratedTypeDeclaration> declaredTypes, IGeneratedField field) => field switch {
-    GeneratedGenericField gen => IsTypeFullyResolved(declaredTypes, gen.Type) && gen.GenericTypes.All(x => IsTypeFullyResolved(declaredTypes, x)),
-    GeneratedArrayField arr => IsTypeFullyResolved(declaredTypes, arr.Type) && IsTypeFullyResolved(declaredTypes, arr.ArrayType),
-    _ => TypeGeneratorUtil.IsUnityEngineBuiltInType(field.Type.ReferencedType) || IsTypeFullyResolved(declaredTypes, field.Type)
+static bool IsFieldTypeFullyResolved(IGeneratedField field, List<IGeneratedTypeDeclaration> flattenedWorkingSet) => field switch {
+    GeneratedGenericField gen => IsTypeFullyResolved(gen.Type, flattenedWorkingSet) && gen.GenericTypes.All(x => IsTypeFullyResolved(x, flattenedWorkingSet)),
+    GeneratedArrayField arr => IsTypeFullyResolved(arr.Type, flattenedWorkingSet) && IsTypeFullyResolved(arr.ArrayType, flattenedWorkingSet),
+    _ => TypeGeneratorUtil.IsUnityEngineBuiltInType(field.Type.ReferencedType) || IsTypeFullyResolved(field.Type, flattenedWorkingSet)
 };
 
-static bool IsTypeFullyResolved(List<IGeneratedTypeDeclaration> declaredTypes, IGeneratedType type) {
-    if (declaredTypes.Any(x => x.ReferencedType == type.ReferencedType)) {
+static bool IsTypeFullyResolved(IGeneratedType type, List<IGeneratedTypeDeclaration> flattenedWorkingSet) {
+    if (flattenedWorkingSet.Any(x => x.ReferencedType == type.ReferencedType)) {
         return true;
     }
 

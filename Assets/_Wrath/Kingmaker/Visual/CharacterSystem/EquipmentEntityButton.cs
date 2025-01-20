@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.Visual.CharacterSystem {
 
-public class EquipmentEntityButton : MonoBehaviour {
+public class EquipmentEntityButton : global::UnityEngine.MonoBehaviour {
 }
 
 }

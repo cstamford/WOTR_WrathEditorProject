@@ -1,9 +1,10 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.UI.Dialog {
 
-public class DialogBookEventUIManager : MonoBehaviour {
-    public DialogController Dialog /* Kingmaker.UI.Dialog.DialogController */;
+public class DialogBookEventUIManager : global::UnityEngine.MonoBehaviour {
+    public global::Kingmaker.UI.Dialog.DialogController Dialog /* Kingmaker.UI.Dialog.DialogController */;
 }
 
 }

@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.QA {
 
-public class MemoryLeaker : MonoBehaviour {
+public class MemoryLeaker : global::UnityEngine.MonoBehaviour {
 }
 
 }

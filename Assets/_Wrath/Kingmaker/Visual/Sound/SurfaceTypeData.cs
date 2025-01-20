@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Kingmaker.Visual.Sound {
 
-public class SurfaceTypeData : ScriptableObject {
+public class SurfaceTypeData : global::UnityEngine.ScriptableObject {
     public object Types /* Kingmaker.Visual.Sound.Entry[] */;
     public string[] SortedMaskNames /* System.String[] */;
     public object Settings /* Kingmaker.Visual.Sound.Setting[] */;
@@ -16,7 +16,7 @@ public class SurfaceTypeData : ScriptableObject {
 
     public class SurfaceDebugInfo {
         public object SoundSwitch /* Kingmaker.Sound.SurfaceSoundType */;
-        public Color GizmoColor /* UnityEngine.Color */;
+        public global::UnityEngine.Color GizmoColor /* UnityEngine.Color */;
     }
 
     public class Setting {

@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace DungeonArchitect {
 
-public class DungeonDoorsManager : MonoBehaviour {
+public class DungeonDoorsManager : global::UnityEngine.MonoBehaviour {
 }
 
 }

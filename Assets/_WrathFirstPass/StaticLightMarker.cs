@@ -1,5 +1,6 @@
+using System;
 using UnityEngine;
 
-public class StaticLightMarker : MonoBehaviour {
+public class StaticLightMarker : global::UnityEngine.MonoBehaviour {
 }
 

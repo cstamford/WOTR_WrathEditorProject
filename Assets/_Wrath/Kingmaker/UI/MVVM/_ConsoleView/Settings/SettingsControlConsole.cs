@@ -1,25 +1,25 @@
-using Owlcat.Runtime.UI.ConsoleTools.HintTool;
+using System;
 using UnityEngine;
 
 namespace Kingmaker.UI.MVVM._ConsoleView.Settings {
 
-public class SettingsControlConsole : MonoBehaviour {
-    [SerializeField] public ConsoleHint LeftStickButtonHint /* Owlcat.Runtime.UI.ConsoleTools.HintTool.ConsoleHint */;
-    [SerializeField] public ConsoleHint DPadRightHint /* Owlcat.Runtime.UI.ConsoleTools.HintTool.ConsoleHint */;
-    [SerializeField] public ConsoleHint DPadDownHint /* Owlcat.Runtime.UI.ConsoleTools.HintTool.ConsoleHint */;
-    [SerializeField] public ConsoleHint DPadLeftHint /* Owlcat.Runtime.UI.ConsoleTools.HintTool.ConsoleHint */;
-    [SerializeField] public ConsoleHint DPadUpHint /* Owlcat.Runtime.UI.ConsoleTools.HintTool.ConsoleHint */;
-    [SerializeField] public ConsoleHint LeftUpHint /* Owlcat.Runtime.UI.ConsoleTools.HintTool.ConsoleHint */;
-    [SerializeField] public ConsoleHint LeftBottomHint /* Owlcat.Runtime.UI.ConsoleTools.HintTool.ConsoleHint */;
-    [SerializeField] public ConsoleHint FuncAdditionalHint /* Owlcat.Runtime.UI.ConsoleTools.HintTool.ConsoleHint */;
-    [SerializeField] public ConsoleHint RightBottomHint /* Owlcat.Runtime.UI.ConsoleTools.HintTool.ConsoleHint */;
-    [SerializeField] public ConsoleHint RightUpHint /* Owlcat.Runtime.UI.ConsoleTools.HintTool.ConsoleHint */;
-    [SerializeField] public ConsoleHint OptionsHint /* Owlcat.Runtime.UI.ConsoleTools.HintTool.ConsoleHint */;
-    [SerializeField] public ConsoleHint Func02Hint /* Owlcat.Runtime.UI.ConsoleTools.HintTool.ConsoleHint */;
-    [SerializeField] public ConsoleHint DeclineHint /* Owlcat.Runtime.UI.ConsoleTools.HintTool.ConsoleHint */;
-    [SerializeField] public ConsoleHint ConfirmHint /* Owlcat.Runtime.UI.ConsoleTools.HintTool.ConsoleHint */;
-    [SerializeField] public ConsoleHint Func01Hint /* Owlcat.Runtime.UI.ConsoleTools.HintTool.ConsoleHint */;
-    [SerializeField] public ConsoleHint RightStickButtonHint /* Owlcat.Runtime.UI.ConsoleTools.HintTool.ConsoleHint */;
+public class SettingsControlConsole : global::UnityEngine.MonoBehaviour {
+    [SerializeField] public object LeftStickButtonHint /* Owlcat.Runtime.UI.ConsoleTools.HintTool.ConsoleHint */;
+    [SerializeField] public object DPadRightHint /* Owlcat.Runtime.UI.ConsoleTools.HintTool.ConsoleHint */;
+    [SerializeField] public object DPadDownHint /* Owlcat.Runtime.UI.ConsoleTools.HintTool.ConsoleHint */;
+    [SerializeField] public object DPadLeftHint /* Owlcat.Runtime.UI.ConsoleTools.HintTool.ConsoleHint */;
+    [SerializeField] public object DPadUpHint /* Owlcat.Runtime.UI.ConsoleTools.HintTool.ConsoleHint */;
+    [SerializeField] public object LeftUpHint /* Owlcat.Runtime.UI.ConsoleTools.HintTool.ConsoleHint */;
+    [SerializeField] public object LeftBottomHint /* Owlcat.Runtime.UI.ConsoleTools.HintTool.ConsoleHint */;
+    [SerializeField] public object FuncAdditionalHint /* Owlcat.Runtime.UI.ConsoleTools.HintTool.ConsoleHint */;
+    [SerializeField] public object RightBottomHint /* Owlcat.Runtime.UI.ConsoleTools.HintTool.ConsoleHint */;
+    [SerializeField] public object RightUpHint /* Owlcat.Runtime.UI.ConsoleTools.HintTool.ConsoleHint */;
+    [SerializeField] public object OptionsHint /* Owlcat.Runtime.UI.ConsoleTools.HintTool.ConsoleHint */;
+    [SerializeField] public object Func02Hint /* Owlcat.Runtime.UI.ConsoleTools.HintTool.ConsoleHint */;
+    [SerializeField] public object DeclineHint /* Owlcat.Runtime.UI.ConsoleTools.HintTool.ConsoleHint */;
+    [SerializeField] public object ConfirmHint /* Owlcat.Runtime.UI.ConsoleTools.HintTool.ConsoleHint */;
+    [SerializeField] public object Func01Hint /* Owlcat.Runtime.UI.ConsoleTools.HintTool.ConsoleHint */;
+    [SerializeField] public object RightStickButtonHint /* Owlcat.Runtime.UI.ConsoleTools.HintTool.ConsoleHint */;
 }
 
 }

@@ -3,12 +3,12 @@ using UnityEngine;
 
 namespace RootMotion.FinalIK {
 
-public class InteractionTrigger : MonoBehaviour {
+public class InteractionTrigger : global::UnityEngine.MonoBehaviour {
     public object ranges /* RootMotion.FinalIK.Range[] */;
 
     public class CharacterPosition {
         public bool use /* System.Boolean */;
-        public Vector2 offset /* UnityEngine.Vector2 */;
+        public global::UnityEngine.Vector2 offset /* UnityEngine.Vector2 */;
         public float angleOffset /* System.Single */;
         public float maxAngle /* System.Single */;
         public float radius /* System.Single */;
@@ -17,8 +17,8 @@ public class InteractionTrigger : MonoBehaviour {
     }
 
     public class CameraPosition {
-        public Collider lookAtTarget /* UnityEngine.Collider */;
-        public Vector3 direction /* UnityEngine.Vector3 */;
+        public global::UnityEngine.Collider lookAtTarget /* UnityEngine.Collider */;
+        public global::UnityEngine.Vector3 direction /* UnityEngine.Vector3 */;
         public float maxDistance /* System.Single */;
         public float maxAngle /* System.Single */;
         public bool fixYAxis /* System.Boolean */;
@@ -27,12 +27,12 @@ public class InteractionTrigger : MonoBehaviour {
     public class Range {
         [SerializeField] public string name /* System.String */;
         [SerializeField] public bool show /* System.Boolean */;
-        public InteractionTrigger.CharacterPosition characterPosition /* RootMotion.FinalIK.CharacterPosition */;
-        public InteractionTrigger.CameraPosition cameraPosition /* RootMotion.FinalIK.CameraPosition */;
+        public global::RootMotion.FinalIK.InteractionTrigger.CharacterPosition characterPosition /* RootMotion.FinalIK.CharacterPosition */;
+        public global::RootMotion.FinalIK.InteractionTrigger.CameraPosition cameraPosition /* RootMotion.FinalIK.CameraPosition */;
         public object interactions /* RootMotion.FinalIK.Interaction[] */;
 
         public class Interaction {
-            public InteractionObject interactionObject /* RootMotion.FinalIK.InteractionObject */;
+            public global::RootMotion.FinalIK.InteractionObject interactionObject /* RootMotion.FinalIK.InteractionObject */;
             public object effectors /* RootMotion.FinalIK.FullBodyBipedEffector[] */;
         }
 

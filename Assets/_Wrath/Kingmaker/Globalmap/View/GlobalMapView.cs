@@ -5,24 +5,24 @@ using UnityEngine;
 
 namespace Kingmaker.Globalmap.View {
 
-public class GlobalMapView : MonoBehaviour {
+public class GlobalMapView : global::UnityEngine.MonoBehaviour {
     [SerializeField] public object m_Blueprint /* Kingmaker.Globalmap.Blueprints.Reference */;
-    public object PlayerPawn /* Kingmaker.Globalmap.View.GlobalMapPlayerPawn */;
-    public GlobalMapPawn WarCampPawn /* Kingmaker.Globalmap.View.GlobalMapPawn */;
-    public GlobalMapPawn AzataIslandPawn /* Kingmaker.Globalmap.View.GlobalMapPawn */;
+    public global::Kingmaker.Globalmap.View.GlobalMapPlayerPawn PlayerPawn /* Kingmaker.Globalmap.View.GlobalMapPlayerPawn */;
+    public global::Kingmaker.Globalmap.View.GlobalMapPawn WarCampPawn /* Kingmaker.Globalmap.View.GlobalMapPawn */;
+    public global::Kingmaker.Globalmap.View.GlobalMapPawn AzataIslandPawn /* Kingmaker.Globalmap.View.GlobalMapPawn */;
     public float AzataIslandPawnMovementJumpHeight /* System.Single */;
     public float AzataIslandPawnMovementTime /* System.Single */;
     public float AzataIslandPawnSpeedMax /* System.Single */;
     public int MaxRotationAngle /* System.Int32 */;
-    public GlobalMapPathsVisual PathsVisual /* Kingmaker.UI.GlobalMap.GlobalMapPathsVisual */;
-    public GameObject PawnsHolder /* UnityEngine.GameObject */;
-    public GameObject MapPlane /* UnityEngine.GameObject */;
-    public List<GameObject> AdditionalMapPlanes /* System.Collections.Generic.List<UnityEngine.GameObject> */;
+    public global::Kingmaker.UI.GlobalMap.GlobalMapPathsVisual PathsVisual /* Kingmaker.UI.GlobalMap.GlobalMapPathsVisual */;
+    public global::UnityEngine.GameObject PawnsHolder /* UnityEngine.GameObject */;
+    public global::UnityEngine.GameObject MapPlane /* UnityEngine.GameObject */;
+    public global::System.Collections.Generic.List<global::UnityEngine.GameObject> AdditionalMapPlanes /* System.Collections.Generic.List<UnityEngine.GameObject> */;
     public bool HideEdges /* System.Boolean */;
     public bool HideNavigationArrows /* System.Boolean */;
-    public Color HoverColor /* UnityEngine.Color */;
-    public Color SelectColor /* UnityEngine.Color */;
-    public Color CurretnColor /* UnityEngine.Color */;
+    public global::UnityEngine.Color HoverColor /* UnityEngine.Color */;
+    public global::UnityEngine.Color SelectColor /* UnityEngine.Color */;
+    public global::UnityEngine.Color CurretnColor /* UnityEngine.Color */;
     public object Drezen /* Kingmaker.Globalmap.Blueprints.Reference */;
 }
 

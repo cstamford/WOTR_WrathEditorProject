@@ -1,7 +1,8 @@
+using System;
 using UnityEngine;
 
-public class AkEnvironmentPortal : MonoBehaviour {
-    public Vector3 axis /* UnityEngine.Vector3 */;
+public class AkEnvironmentPortal : global::UnityEngine.MonoBehaviour {
+    public global::UnityEngine.Vector3 axis /* UnityEngine.Vector3 */;
     public object environments /* .AkEnvironment[] */;
 }
 

@@ -3,9 +3,9 @@ using UnityEngine;
 
 namespace UnityEngine.UI.Extensions {
 
-public class UIScrollToSelectionXY : MonoBehaviour {
+public class UIScrollToSelectionXY : global::UnityEngine.MonoBehaviour {
     public float scrollSpeed /* System.Single */;
-    [SerializeField] public RectTransform layoutListGroup /* UnityEngine.RectTransform */;
+    [SerializeField] public global::UnityEngine.RectTransform layoutListGroup /* UnityEngine.RectTransform */;
 }
 
 }

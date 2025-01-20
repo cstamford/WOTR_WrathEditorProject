@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.UI.ActionBar {
 
-public class ActionBarHoverController : MonoBehaviour {
+public class ActionBarHoverController : global::UnityEngine.MonoBehaviour {
 }
 
 }

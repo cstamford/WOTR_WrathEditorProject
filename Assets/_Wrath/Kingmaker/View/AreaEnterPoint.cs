@@ -3,12 +3,12 @@ using UnityEngine;
 
 namespace Kingmaker.View {
 
-public class AreaEnterPoint : MonoBehaviour {
+public class AreaEnterPoint : global::UnityEngine.MonoBehaviour {
     [SerializeField] public object m_Blueprint /* Kingmaker.Blueprints.BlueprintAreaEnterPointReference */;
     public bool RotateCameraOnEnter /* System.Boolean */;
-    public Transform CameraRotationTransform /* UnityEngine.Transform */;
+    public global::UnityEngine.Transform CameraRotationTransform /* UnityEngine.Transform */;
     public bool MoveCameraOnEnter /* System.Boolean */;
-    public Transform CameraPositionTransform /* UnityEngine.Transform */;
+    public global::UnityEngine.Transform CameraPositionTransform /* UnityEngine.Transform */;
 }
 
 }

@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class AkGameObj : MonoBehaviour {
+public class AkGameObj : global::UnityEngine.MonoBehaviour {
     [SerializeField] public object m_listeners /* .AkGameObjListenerList */;
     public bool isEnvironmentAware /* System.Boolean */;
     [SerializeField] public bool isStaticObject /* System.Boolean */;

@@ -4,10 +4,10 @@ using UnityEngine.UI;
 
 namespace UnityEngine.UI.Extensions {
 
-public class ScrollSnap : MonoBehaviour {
-    public ScrollSnap.ScrollDirection direction /* UnityEngine.UI.Extensions.ScrollDirection */;
-    public Button nextButton /* UnityEngine.UI.Button */;
-    public Button prevButton /* UnityEngine.UI.Button */;
+public class ScrollSnap : global::UnityEngine.MonoBehaviour {
+    public global::UnityEngine.UI.Extensions.ScrollSnap.ScrollDirection direction /* UnityEngine.UI.Extensions.ScrollDirection */;
+    public global::UnityEngine.UI.Button nextButton /* UnityEngine.UI.Button */;
+    public global::UnityEngine.UI.Button prevButton /* UnityEngine.UI.Button */;
     public int itemsVisibleAtOnce /* System.Int32 */;
     public bool autoLayoutItems /* System.Boolean */;
     public bool linkScrolbarSteps /* System.Boolean */;

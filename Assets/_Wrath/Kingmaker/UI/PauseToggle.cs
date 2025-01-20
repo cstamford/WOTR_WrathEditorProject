@@ -1,9 +1,10 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.UI {
 
-public class PauseToggle : MonoBehaviour {
-    public CanvasGroup PauseBlock /* UnityEngine.CanvasGroup */;
+public class PauseToggle : global::UnityEngine.MonoBehaviour {
+    public global::UnityEngine.CanvasGroup PauseBlock /* UnityEngine.CanvasGroup */;
 }
 
 }

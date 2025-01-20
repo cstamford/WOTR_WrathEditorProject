@@ -1,9 +1,10 @@
+using System;
 using UnityEngine;
 
 namespace Owlcat.Runtime.Visual.Effects.ParticleSumEmitter {
 
-public class ParticleSystemCustomSubEmission : MonoBehaviour {
-    [SerializeField] public GameObject m_SubEmitterParticleSystemsPrefab /* UnityEngine.GameObject */;
+public class ParticleSystemCustomSubEmission : global::UnityEngine.MonoBehaviour {
+    [SerializeField] public global::UnityEngine.GameObject m_SubEmitterParticleSystemsPrefab /* UnityEngine.GameObject */;
 }
 
 }

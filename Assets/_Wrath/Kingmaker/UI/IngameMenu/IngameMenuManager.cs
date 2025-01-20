@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.UI.IngameMenu {
 
-public class IngameMenuManager : MonoBehaviour {
+public class IngameMenuManager : global::UnityEngine.MonoBehaviour {
 }
 
 }

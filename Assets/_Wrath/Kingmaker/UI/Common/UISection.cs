@@ -4,14 +4,14 @@ using UnityEngine;
 
 namespace Kingmaker.UI.Common {
 
-public class UISection : MonoBehaviour {
-    public List<int> SectionGroupIndex /* System.Collections.Generic.List<System.Int32> */;
-    public List<Vector2> Positions /* System.Collections.Generic.List<UnityEngine.Vector2> */;
-    public List<Vector2> Sizes /* System.Collections.Generic.List<UnityEngine.Vector2> */;
+public class UISection : global::UnityEngine.MonoBehaviour {
+    public global::System.Collections.Generic.List<int> SectionGroupIndex /* System.Collections.Generic.List<System.Int32> */;
+    public global::System.Collections.Generic.List<global::UnityEngine.Vector2> Positions /* System.Collections.Generic.List<UnityEngine.Vector2> */;
+    public global::System.Collections.Generic.List<global::UnityEngine.Vector2> Sizes /* System.Collections.Generic.List<UnityEngine.Vector2> */;
     public float Duration /* System.Single */;
     public bool AlwaysHidden /* System.Boolean */;
     public bool Move /* System.Boolean */;
-    public UISection.AppearDirection Direction /* Kingmaker.UI.Common.AppearDirection */;
+    public global::Kingmaker.UI.Common.UISection.AppearDirection Direction /* Kingmaker.UI.Common.AppearDirection */;
     public float Range /* System.Single */;
     public bool Fade /* System.Boolean */;
     public bool GameObjectAlwaysActive /* System.Boolean */;

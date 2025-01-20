@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.QA.Statistics {
 
-public class AnalyticsPrivacyManager : MonoBehaviour {
+public class AnalyticsPrivacyManager : global::UnityEngine.MonoBehaviour {
 }
 
 }

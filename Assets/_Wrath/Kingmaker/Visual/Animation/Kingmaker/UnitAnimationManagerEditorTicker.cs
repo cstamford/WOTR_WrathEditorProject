@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.Visual.Animation.Kingmaker {
 
-public class UnitAnimationManagerEditorTicker : MonoBehaviour {
+public class UnitAnimationManagerEditorTicker : global::UnityEngine.MonoBehaviour {
 }
 
 }

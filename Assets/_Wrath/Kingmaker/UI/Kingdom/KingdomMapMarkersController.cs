@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.UI.Kingdom {
 
-public class KingdomMapMarkersController : MonoBehaviour {
+public class KingdomMapMarkersController : global::UnityEngine.MonoBehaviour {
 }
 
 }

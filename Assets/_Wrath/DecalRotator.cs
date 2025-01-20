@@ -1,5 +1,6 @@
+using System;
 using UnityEngine;
 
-public class DecalRotator : MonoBehaviour {
+public class DecalRotator : global::UnityEngine.MonoBehaviour {
 }
 

@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.UI {
 
-public class TestButtonPauseOnCast : MonoBehaviour {
+public class TestButtonPauseOnCast : global::UnityEngine.MonoBehaviour {
 }
 
 }

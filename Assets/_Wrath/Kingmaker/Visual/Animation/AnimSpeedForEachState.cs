@@ -3,10 +3,10 @@ using UnityEngine;
 
 namespace Kingmaker.Visual.Animation {
 
-public class AnimSpeedForEachState : MonoBehaviour {
-    public Animator AnimatorForChangeSpeed /* UnityEngine.Animator */;
+public class AnimSpeedForEachState : global::UnityEngine.MonoBehaviour {
+    public global::UnityEngine.Animator AnimatorForChangeSpeed /* UnityEngine.Animator */;
     public float SpeedForNotFoundedClips /* System.Single */;
-    public object AnimManager /* Kingmaker.Visual.Animation.AnimationManager */;
+    public global::Kingmaker.Visual.Animation.AnimationManager AnimManager /* Kingmaker.Visual.Animation.AnimationManager */;
     public object Clips /* Kingmaker.Visual.Animation.ClipOptions[] */;
 }
 

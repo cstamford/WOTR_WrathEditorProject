@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.UI.GlobalMap.Temp {
 
-public class RecruitArmyUnitsWindow : MonoBehaviour {
+public class RecruitArmyUnitsWindow : global::UnityEngine.MonoBehaviour {
 }
 
 }

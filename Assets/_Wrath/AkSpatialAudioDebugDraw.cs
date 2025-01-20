@@ -1,5 +1,6 @@
+using System;
 using UnityEngine;
 
-public class AkSpatialAudioDebugDraw : MonoBehaviour {
+public class AkSpatialAudioDebugDraw : global::UnityEngine.MonoBehaviour {
 }
 

@@ -1,5 +1,6 @@
+using System;
 using UnityEngine;
 
-public class FindLightProbesAnchor : MonoBehaviour {
+public class FindLightProbesAnchor : global::UnityEngine.MonoBehaviour {
 }
 

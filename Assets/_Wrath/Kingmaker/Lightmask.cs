@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker {
 
-public class Lightmask : MonoBehaviour {
+public class Lightmask : global::UnityEngine.MonoBehaviour {
 }
 
 }

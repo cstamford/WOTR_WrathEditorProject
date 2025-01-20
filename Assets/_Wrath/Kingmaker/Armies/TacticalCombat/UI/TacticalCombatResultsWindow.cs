@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.Armies.TacticalCombat.UI {
 
-public class TacticalCombatResultsWindow : MonoBehaviour {
+public class TacticalCombatResultsWindow : global::UnityEngine.MonoBehaviour {
 }
 
 }

@@ -1,5 +1,6 @@
+using System;
 using UnityEngine;
 
-public class MB : MonoBehaviour {
+public class MB : global::UnityEngine.MonoBehaviour {
 }
 

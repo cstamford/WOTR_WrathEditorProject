@@ -1,5 +1,6 @@
+using System;
 using UnityEngine;
 
-public class SecretRoomStaticLightMarker : MonoBehaviour {
+public class SecretRoomStaticLightMarker : global::UnityEngine.MonoBehaviour {
 }
 

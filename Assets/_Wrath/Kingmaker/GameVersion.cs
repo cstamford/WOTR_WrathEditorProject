@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Kingmaker {
 
-public class GameVersion : ScriptableObject {
+public class GameVersion : global::UnityEngine.ScriptableObject {
     public string Version /* System.String */;
 }
 

@@ -2,8 +2,8 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PS4Manager : MonoBehaviour {
-    public List<PS4Manager.DlcContent> m_DlcContents /* System.Collections.Generic.List<.DlcContent> */;
+public class PS4Manager : global::UnityEngine.MonoBehaviour {
+    public global::System.Collections.Generic.List<PS4Manager.DlcContent> m_DlcContents /* System.Collections.Generic.List<.DlcContent> */;
     public bool CanListenEntitlements /* System.Boolean */;
 
     public class DlcContent {

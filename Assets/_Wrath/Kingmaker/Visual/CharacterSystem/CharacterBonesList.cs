@@ -1,9 +1,10 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.Visual.CharacterSystem {
 
-public class CharacterBonesList : MonoBehaviour {
-    public Transform[] Bones /* UnityEngine.Transform[] */;
+public class CharacterBonesList : global::UnityEngine.MonoBehaviour {
+    public global::UnityEngine.Transform[] Bones /* UnityEngine.Transform[] */;
 }
 
 }

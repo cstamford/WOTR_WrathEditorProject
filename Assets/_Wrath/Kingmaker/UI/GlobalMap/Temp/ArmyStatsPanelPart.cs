@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.UI.GlobalMap.Temp {
 
-public class ArmyStatsPanelPart : MonoBehaviour {
+public class ArmyStatsPanelPart : global::UnityEngine.MonoBehaviour {
     [SerializeField] public object m_MoraleText /* TMPro.TMP_Text */;
     [SerializeField] public object m_MovePointsText /* TMPro.TMP_Text */;
     [SerializeField] public object m_FactionText /* TMPro.TMP_Text */;

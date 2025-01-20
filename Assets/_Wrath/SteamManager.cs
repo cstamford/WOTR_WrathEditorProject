@@ -1,5 +1,6 @@
+using System;
 using UnityEngine;
 
-public class SteamManager : MonoBehaviour {
+public class SteamManager : global::UnityEngine.MonoBehaviour {
 }
 

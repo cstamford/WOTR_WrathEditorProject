@@ -3,11 +3,11 @@ using UnityEngine;
 
 namespace Kingmaker.Settings.Difficulty {
 
-public class DifficultyPresetsList : ScriptableObject {
+public class DifficultyPresetsList : global::UnityEngine.ScriptableObject {
     [SerializeField] public object m_Difficulties /* Kingmaker.Settings.Difficulty.DifficultyPresetAsset[] */;
-    [SerializeField] public DifficultyPresetAsset m_CoreDifficulty /* Kingmaker.Settings.Difficulty.DifficultyPresetAsset */;
-    [SerializeField] public DifficultyPresetAsset m_HardDifficulty /* Kingmaker.Settings.Difficulty.DifficultyPresetAsset */;
-    [SerializeField] public DifficultyPresetAsset m_UnfairDifficulty /* Kingmaker.Settings.Difficulty.DifficultyPresetAsset */;
+    [SerializeField] public global::Kingmaker.Settings.Difficulty.DifficultyPresetAsset m_CoreDifficulty /* Kingmaker.Settings.Difficulty.DifficultyPresetAsset */;
+    [SerializeField] public global::Kingmaker.Settings.Difficulty.DifficultyPresetAsset m_HardDifficulty /* Kingmaker.Settings.Difficulty.DifficultyPresetAsset */;
+    [SerializeField] public global::Kingmaker.Settings.Difficulty.DifficultyPresetAsset m_UnfairDifficulty /* Kingmaker.Settings.Difficulty.DifficultyPresetAsset */;
     public object StatsAdjustmentPresets /* Kingmaker.Settings.Difficulty.StatsAdjustmentPreset[] */;
     public float[] MobExperienceCoeffs /* System.Single[] */;
 

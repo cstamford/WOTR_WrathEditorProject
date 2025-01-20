@@ -3,8 +3,8 @@ using UnityEngine;
 
 namespace Kingmaker.UI.ServiceWindow {
 
-public class DollRoomCharacterController : MonoBehaviour {
-    public Transform Character /* UnityEngine.Transform */;
+public class DollRoomCharacterController : global::UnityEngine.MonoBehaviour {
+    public global::UnityEngine.Transform Character /* UnityEngine.Transform */;
     public float MaxAngularSpeed /* System.Single */;
 }
 

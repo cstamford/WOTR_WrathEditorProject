@@ -4,12 +4,12 @@ using UnityEngine.UI;
 
 namespace Kingmaker.UI.CombatText {
 
-public class CombatTextController : MonoBehaviour {
-    public Image Icon /* UnityEngine.UI.Image */;
-    public Image Foreground /* UnityEngine.UI.Image */;
+public class CombatTextController : global::UnityEngine.MonoBehaviour {
+    public global::UnityEngine.UI.Image Icon /* UnityEngine.UI.Image */;
+    public global::UnityEngine.UI.Image Foreground /* UnityEngine.UI.Image */;
     public float Duration /* System.Single */;
-    public CanvasGroup IconCanvasGroup /* UnityEngine.CanvasGroup */;
-    public CanvasGroup ForegroundCanvasGroup /* UnityEngine.CanvasGroup */;
+    public global::UnityEngine.CanvasGroup IconCanvasGroup /* UnityEngine.CanvasGroup */;
+    public global::UnityEngine.CanvasGroup ForegroundCanvasGroup /* UnityEngine.CanvasGroup */;
 }
 
 }

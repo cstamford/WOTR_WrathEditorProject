@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Diagnostics;
+using System.Text;
 
 namespace AssemblyImporter;
 
@@ -129,27 +130,38 @@ public static class GeneratedTypeFormatter {
             refType = refType.DeclaringType;
         }
 
-        List<string> typeNames = [type.Name];
-        
-        if (type.Namespace.Split('.').Last() == type.Name) {
+        List<string> typeNames = [type.Name, .. nestedTypes.Select(x => x.Name)];
+
+        bool needsGlobal = false;
+
+        if (!string.IsNullOrWhiteSpace(type.Namespace)) {
             typeNames.Add(type.Namespace);
+            needsGlobal = true;
         }
 
-        typeNames.AddRange(nestedTypes.Select(x => x.Name));
         typeNames.Reverse();
 
-        return string.Join('.', typeNames);
+        string finalName = string.Join('.', typeNames);
+        return needsGlobal ? $"global::{finalName}" : finalName;
     }
 
     private static bool ShouldIncludeBaseType(IGeneratedType t) => t is not (
         GeneratedTypeForwardDecl or
         GeneratedTypeInterfaceDeclaration or
-        { Name: "Array" or "Delegate" or "Enum" or "Object" or "ValueType", Namespace: "System" }
+        { ReferencedType: { IsAbstract: true } } or
+        { Name: "Array" or "Delegate" or "Enum" or "MulticastDelegate" or "Object" or "ValueType", Namespace: "System" }
     );
 
     private static void GatherUsedNamespaces(IGeneratedTypeDeclaration gen, List<string> namespaces) {
         List<IGeneratedType> referencedTypes = [];
         TypeGeneratorUtil.CollectListOfReferencedTypes(gen, referencedTypes);
+
+        // Technically, we shouldn't need these: but because we're not exhaustive (e.g. in attributes), it makes
+        // our life a lot easier to just explicitly include these all the time.
+        namespaces.AddRange([
+            "System",
+            "UnityEngine"
+        ]);
 
         namespaces.AddRange(referencedTypes
             .Where(x => 

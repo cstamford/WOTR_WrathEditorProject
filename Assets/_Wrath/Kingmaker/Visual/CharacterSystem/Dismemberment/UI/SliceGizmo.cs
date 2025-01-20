@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.Visual.CharacterSystem.Dismemberment.UI {
 
-public class SliceGizmo : MonoBehaviour {
+public class SliceGizmo : global::UnityEngine.MonoBehaviour {
 }
 
 }

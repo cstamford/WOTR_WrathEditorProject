@@ -1,5 +1,6 @@
+using System;
 using UnityEngine;
 
-public class TestCompression : MonoBehaviour {
+public class TestCompression : global::UnityEngine.MonoBehaviour {
 }
 

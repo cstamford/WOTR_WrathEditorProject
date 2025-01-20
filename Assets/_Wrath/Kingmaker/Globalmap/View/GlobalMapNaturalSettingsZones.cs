@@ -3,8 +3,8 @@ using UnityEngine;
 
 namespace Kingmaker.Globalmap.View {
 
-public class GlobalMapNaturalSettingsZones : MonoBehaviour {
-    public Transform MapPlane /* UnityEngine.Transform */;
+public class GlobalMapNaturalSettingsZones : global::UnityEngine.MonoBehaviour {
+    public global::UnityEngine.Transform MapPlane /* UnityEngine.Transform */;
     public float CellSize /* System.Single */;
     [SerializeField] public object m_ZoneCells /* Kingmaker.Enums.GlobalMapZone[] */;
     [SerializeField] public int m_Width /* System.Int32 */;

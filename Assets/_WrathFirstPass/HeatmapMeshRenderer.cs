@@ -1,6 +1,7 @@
+using System;
 using UnityEngine;
 
-public class HeatmapMeshRenderer : MonoBehaviour {
-    public Material[] m_Materials /* UnityEngine.Material[] */;
+public class HeatmapMeshRenderer : global::UnityEngine.MonoBehaviour {
+    public global::UnityEngine.Material[] m_Materials /* UnityEngine.Material[] */;
 }
 

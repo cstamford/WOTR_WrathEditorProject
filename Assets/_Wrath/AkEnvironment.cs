@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class AkEnvironment : MonoBehaviour {
+public class AkEnvironment : global::UnityEngine.MonoBehaviour {
     public bool excludeOthers /* System.Boolean */;
     public bool isDefault /* System.Boolean */;
     public object data /* AK.Wwise.AuxBus */;

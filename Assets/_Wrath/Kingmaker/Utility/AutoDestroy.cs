@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Kingmaker.Utility {
 
-public class AutoDestroy : MonoBehaviour {
+public class AutoDestroy : global::UnityEngine.MonoBehaviour {
     public float Lifetime /* System.Single */;
 }
 

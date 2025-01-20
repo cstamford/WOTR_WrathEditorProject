@@ -1,14 +1,14 @@
 using System;
 using UnityEngine;
 
-public class _2dxFX_NewTeleportation2 : MonoBehaviour {
-    public Material ForceMaterial /* UnityEngine.Material */;
+public class _2dxFX_NewTeleportation2 : global::UnityEngine.MonoBehaviour {
+    public global::UnityEngine.Material ForceMaterial /* UnityEngine.Material */;
     public bool ActiveChange /* System.Boolean */;
     public float _Alpha /* System.Single */;
-    public Texture2D __MainTex2 /* UnityEngine.Texture2D */;
+    public global::UnityEngine.Texture2D __MainTex2 /* UnityEngine.Texture2D */;
     public float _Fade /* System.Single */;
     public float _HDR_Intensity /* System.Single */;
-    public Color TeleportationColor /* UnityEngine.Color */;
+    public global::UnityEngine.Color TeleportationColor /* UnityEngine.Color */;
     public float _Distortion /* System.Single */;
     public float _Value4 /* System.Single */;
     public bool _AutoScrollX /* System.Boolean */;

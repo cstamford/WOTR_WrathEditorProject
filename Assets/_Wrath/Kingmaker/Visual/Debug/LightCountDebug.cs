@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Kingmaker.Visual.Debug {
 
-public class LightCountDebug : MonoBehaviour {
+public class LightCountDebug : global::UnityEngine.MonoBehaviour {
     public bool IsEnabled /* System.Boolean */;
 }
 

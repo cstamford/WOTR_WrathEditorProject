@@ -1,9 +1,10 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.UI.SaveLoadWindow {
 
-public class SaveInjectorInGameViewModel : MonoBehaviour {
-    [SerializeField] public SaveInjectorView m_InjectorView /* Kingmaker.UI.SaveLoadWindow.SaveInjectorView */;
+public class SaveInjectorInGameViewModel : global::UnityEngine.MonoBehaviour {
+    [SerializeField] public global::Kingmaker.UI.SaveLoadWindow.SaveInjectorView m_InjectorView /* Kingmaker.UI.SaveLoadWindow.SaveInjectorView */;
 }
 
 }

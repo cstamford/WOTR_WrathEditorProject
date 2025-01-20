@@ -1,5 +1,6 @@
+using System;
 using UnityEngine;
 
-public class PhysicsBakerWindow : MonoBehaviour {
+public class PhysicsBakerWindow : global::UnityEngine.MonoBehaviour {
 }
 

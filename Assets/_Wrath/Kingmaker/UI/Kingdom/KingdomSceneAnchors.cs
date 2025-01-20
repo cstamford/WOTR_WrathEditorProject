@@ -1,9 +1,10 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.UI.Kingdom {
 
-public class KingdomSceneAnchors : MonoBehaviour {
-    public Transform MapAnchor /* UnityEngine.Transform */;
+public class KingdomSceneAnchors : global::UnityEngine.MonoBehaviour {
+    public global::UnityEngine.Transform MapAnchor /* UnityEngine.Transform */;
 }
 
 }

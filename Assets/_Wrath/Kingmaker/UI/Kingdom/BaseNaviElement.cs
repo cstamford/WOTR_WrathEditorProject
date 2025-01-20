@@ -1,15 +1,16 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace Kingmaker.UI.Kingdom {
 
-public class BaseNaviElement : MonoBehaviour {
-    public GameObject DefaultLayer /* UnityEngine.GameObject */;
-    public GameObject ActiveLayer /* UnityEngine.GameObject */;
+public class BaseNaviElement : global::UnityEngine.MonoBehaviour {
+    public global::UnityEngine.GameObject DefaultLayer /* UnityEngine.GameObject */;
+    public global::UnityEngine.GameObject ActiveLayer /* UnityEngine.GameObject */;
     public object Label /* TMPro.TextMeshProUGUI */;
-    public Color SelectColor /* UnityEngine.Color */;
-    public Color NormalColor /* UnityEngine.Color */;
-    public List<GameObject> Fxs /* System.Collections.Generic.List<UnityEngine.GameObject> */;
+    public global::UnityEngine.Color SelectColor /* UnityEngine.Color */;
+    public global::UnityEngine.Color NormalColor /* UnityEngine.Color */;
+    public global::System.Collections.Generic.List<global::UnityEngine.GameObject> Fxs /* System.Collections.Generic.List<UnityEngine.GameObject> */;
 }
 
 }

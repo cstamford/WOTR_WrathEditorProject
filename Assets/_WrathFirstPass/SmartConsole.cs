@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class SmartConsole : MonoBehaviour {
+public class SmartConsole : global::UnityEngine.MonoBehaviour {
 
     public class Command {
         public string m_name /* System.String */;

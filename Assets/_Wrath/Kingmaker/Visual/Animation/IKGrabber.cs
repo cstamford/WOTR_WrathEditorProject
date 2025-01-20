@@ -1,10 +1,11 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.Visual.Animation {
 
-public class IKGrabber : MonoBehaviour {
-    public Transform GrabTargetTransform /* UnityEngine.Transform */;
-    public Transform GrabBone /* UnityEngine.Transform */;
+public class IKGrabber : global::UnityEngine.MonoBehaviour {
+    public global::UnityEngine.Transform GrabTargetTransform /* UnityEngine.Transform */;
+    public global::UnityEngine.Transform GrabBone /* UnityEngine.Transform */;
 }
 
 }

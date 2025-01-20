@@ -1,11 +1,12 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.UI.GlobalMap {
 
-public class GlobalMapLocalMapController : MonoBehaviour {
-    public RectTransform Map /* UnityEngine.RectTransform */;
-    public RectTransform Frame /* UnityEngine.RectTransform */;
-    public RectTransform Avatar /* UnityEngine.RectTransform */;
+public class GlobalMapLocalMapController : global::UnityEngine.MonoBehaviour {
+    public global::UnityEngine.RectTransform Map /* UnityEngine.RectTransform */;
+    public global::UnityEngine.RectTransform Frame /* UnityEngine.RectTransform */;
+    public global::UnityEngine.RectTransform Avatar /* UnityEngine.RectTransform */;
 }
 
 }

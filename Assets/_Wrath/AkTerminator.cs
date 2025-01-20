@@ -1,5 +1,6 @@
+using System;
 using UnityEngine;
 
-public class AkTerminator : MonoBehaviour {
+public class AkTerminator : global::UnityEngine.MonoBehaviour {
 }
 

@@ -1,5 +1,6 @@
+using System;
 using UnityEngine;
 
-public class AkBasePlatformSettings : ScriptableObject {
+public class AkBasePlatformSettings : global::UnityEngine.ScriptableObject {
 }
 

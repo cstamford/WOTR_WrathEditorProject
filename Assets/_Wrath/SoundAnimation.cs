@@ -1,5 +1,6 @@
+using System;
 using UnityEngine;
 
-public class SoundAnimation : MonoBehaviour {
+public class SoundAnimation : global::UnityEngine.MonoBehaviour {
 }
 

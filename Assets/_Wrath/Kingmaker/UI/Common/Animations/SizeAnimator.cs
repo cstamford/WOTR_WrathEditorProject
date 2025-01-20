@@ -3,13 +3,13 @@ using UnityEngine;
 
 namespace Kingmaker.UI.Common.Animations {
 
-public class SizeAnimator : MonoBehaviour {
+public class SizeAnimator : global::UnityEngine.MonoBehaviour {
     public bool SizeByX /* System.Boolean */;
-    public SizeAnimator.MovePart PartX /* Kingmaker.UI.Common.Animations.MovePart */;
+    public global::Kingmaker.UI.Common.Animations.SizeAnimator.MovePart PartX /* Kingmaker.UI.Common.Animations.MovePart */;
     public bool SizeByY /* System.Boolean */;
-    public SizeAnimator.MovePart PartY /* Kingmaker.UI.Common.Animations.MovePart */;
+    public global::Kingmaker.UI.Common.Animations.SizeAnimator.MovePart PartY /* Kingmaker.UI.Common.Animations.MovePart */;
     public float AnimationTime /* System.Single */;
-    public AnimationCurve Curve /* UnityEngine.AnimationCurve */;
+    public global::UnityEngine.AnimationCurve Curve /* UnityEngine.AnimationCurve */;
 
     public class MovePart {
         public float AppearSize /* System.Single */;

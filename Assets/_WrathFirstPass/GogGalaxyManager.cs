@@ -1,5 +1,6 @@
+using System;
 using UnityEngine;
 
-public class GogGalaxyManager : MonoBehaviour {
+public class GogGalaxyManager : global::UnityEngine.MonoBehaviour {
 }
 

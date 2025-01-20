@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Kingmaker.Blueprints.Root.Strings {
 
-public class SpellDescriptorString : ScriptableObject {
+public class SpellDescriptorString : global::UnityEngine.ScriptableObject {
     public object Entries /* Kingmaker.Blueprints.Root.Strings.Entry[] */;
 
     public class Entry {

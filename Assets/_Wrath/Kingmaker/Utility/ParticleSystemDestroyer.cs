@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Kingmaker.Utility {
 
-public class ParticleSystemDestroyer : MonoBehaviour {
+public class ParticleSystemDestroyer : global::UnityEngine.MonoBehaviour {
     public float MinDuration /* System.Single */;
     public float MaxDuration /* System.Single */;
 }

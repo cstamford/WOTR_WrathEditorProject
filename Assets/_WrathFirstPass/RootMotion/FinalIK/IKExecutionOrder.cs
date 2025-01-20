@@ -1,10 +1,11 @@
+using System;
 using UnityEngine;
 
 namespace RootMotion.FinalIK {
 
-public class IKExecutionOrder : MonoBehaviour {
+public class IKExecutionOrder : global::UnityEngine.MonoBehaviour {
     public object IKComponents /* RootMotion.FinalIK.IK[] */;
-    public Animator animator /* UnityEngine.Animator */;
+    public global::UnityEngine.Animator animator /* UnityEngine.Animator */;
 }
 
 }

@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.Visual.CharacterSystem {
 
-public class UnskinnedOutfitManager : MonoBehaviour {
+public class UnskinnedOutfitManager : global::UnityEngine.MonoBehaviour {
 }
 
 }

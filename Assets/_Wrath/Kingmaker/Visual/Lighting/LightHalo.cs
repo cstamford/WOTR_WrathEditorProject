@@ -3,10 +3,10 @@ using UnityEngine;
 
 namespace Kingmaker.Visual.Lighting {
 
-public class LightHalo : MonoBehaviour {
-    public Color Color /* UnityEngine.Color */;
+public class LightHalo : global::UnityEngine.MonoBehaviour {
+    public global::UnityEngine.Color Color /* UnityEngine.Color */;
     public float Size /* System.Single */;
-    public Material Material /* UnityEngine.Material */;
+    public global::UnityEngine.Material Material /* UnityEngine.Material */;
 }
 
 }

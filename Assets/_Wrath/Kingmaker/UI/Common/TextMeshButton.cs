@@ -1,13 +1,14 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.UI.Common {
 
-public class TextMeshButton : MonoBehaviour {
+public class TextMeshButton : global::UnityEngine.MonoBehaviour {
     public object Text /* TMPro.TextMeshProUGUI */;
-    public Color NormalColor /* UnityEngine.Color */;
-    public Color HighlitedColor /* UnityEngine.Color */;
-    public Color PressedColor /* UnityEngine.Color */;
-    public Color DisableColor /* UnityEngine.Color */;
+    public global::UnityEngine.Color NormalColor /* UnityEngine.Color */;
+    public global::UnityEngine.Color HighlitedColor /* UnityEngine.Color */;
+    public global::UnityEngine.Color PressedColor /* UnityEngine.Color */;
+    public global::UnityEngine.Color DisableColor /* UnityEngine.Color */;
 }
 
 }

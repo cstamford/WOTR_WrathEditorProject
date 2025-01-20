@@ -1,5 +1,6 @@
+using System;
 using UnityEngine;
 
-public class BoneSelect : MonoBehaviour {
+public class BoneSelect : global::UnityEngine.MonoBehaviour {
 }
 

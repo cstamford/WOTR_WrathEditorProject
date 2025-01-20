@@ -1,5 +1,6 @@
+using System;
 using UnityEngine;
 
-public class UIInputUserManager : MonoBehaviour {
+public class UIInputUserManager : global::UnityEngine.MonoBehaviour {
 }
 

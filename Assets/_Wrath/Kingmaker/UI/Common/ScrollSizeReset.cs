@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.UI.Common {
 
-public class ScrollSizeReset : MonoBehaviour {
+public class ScrollSizeReset : global::UnityEngine.MonoBehaviour {
 }
 
 }

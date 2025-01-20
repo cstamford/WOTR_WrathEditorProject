@@ -3,8 +3,8 @@ using UnityEngine;
 
 namespace Kingmaker.UI.MainMenuUI {
 
-public class LightTweenAnchor : MonoBehaviour {
-    [SerializeField] public LightTweenAnchor.TweenLightData m_DefaultTween /* Kingmaker.UI.MainMenuUI.TweenLightData */;
+public class LightTweenAnchor : global::UnityEngine.MonoBehaviour {
+    [SerializeField] public global::Kingmaker.UI.MainMenuUI.LightTweenAnchor.TweenLightData m_DefaultTween /* Kingmaker.UI.MainMenuUI.TweenLightData */;
     [SerializeField] public object m_Tweens /* Kingmaker.UI.MainMenuUI.TweenLightDataWithPrev[] */;
     public float Intensivity /* System.Single */;
     public float Range /* System.Single */;
@@ -15,14 +15,14 @@ public class LightTweenAnchor : MonoBehaviour {
         public float AnimationTime /* System.Single */;
         public bool UseEasing /* System.Boolean */;
         public bool SeparateCurves /* System.Boolean */;
-        public object AnimationTrack /* .VectorSpline */;
-        public AnimationCurve AnimationCurve /* UnityEngine.AnimationCurve */;
-        public object LootAtTrack /* .VectorSpline */;
-        public AnimationCurve LookAtCurve /* UnityEngine.AnimationCurve */;
+        public VectorSpline AnimationTrack /* .VectorSpline */;
+        public global::UnityEngine.AnimationCurve AnimationCurve /* UnityEngine.AnimationCurve */;
+        public VectorSpline LootAtTrack /* .VectorSpline */;
+        public global::UnityEngine.AnimationCurve LookAtCurve /* UnityEngine.AnimationCurve */;
     }
 
-    public class TweenLightDataWithPrev : LightTweenAnchor.TweenLightData {
-        public object PreviousAnchor /* Kingmaker.UI.MainMenuUI.LightTweenAnchor */;
+    public class TweenLightDataWithPrev : global::Kingmaker.UI.MainMenuUI.LightTweenAnchor.TweenLightData {
+        public global::Kingmaker.UI.MainMenuUI.LightTweenAnchor PreviousAnchor /* Kingmaker.UI.MainMenuUI.LightTweenAnchor */;
     }
 
 }

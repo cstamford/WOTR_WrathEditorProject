@@ -3,9 +3,9 @@ using UnityEngine;
 
 namespace RootMotion.FinalIK {
 
-public class OffsetModifierVRIK : MonoBehaviour {
+public class OffsetModifierVRIK : global::UnityEngine.MonoBehaviour {
     public float weight /* System.Single */;
-    public object ik /* RootMotion.FinalIK.VRIK */;
+    public global::RootMotion.FinalIK.VRIK ik /* RootMotion.FinalIK.VRIK */;
 }
 
 }

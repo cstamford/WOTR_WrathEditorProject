@@ -1,9 +1,10 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker {
 
-public class ForceEnableRenderer : MonoBehaviour {
-    public Renderer rend /* UnityEngine.Renderer */;
+public class ForceEnableRenderer : global::UnityEngine.MonoBehaviour {
+    public global::UnityEngine.Renderer rend /* UnityEngine.Renderer */;
 }
 
 }

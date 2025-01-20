@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.Modding {
 
-public class OwlcatModificationsWindow : MonoBehaviour {
+public class OwlcatModificationsWindow : global::UnityEngine.MonoBehaviour {
 }
 
 }

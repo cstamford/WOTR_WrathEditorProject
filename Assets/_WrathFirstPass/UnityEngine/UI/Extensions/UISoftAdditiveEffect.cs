@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace UnityEngine.UI.Extensions {
 
-public class UISoftAdditiveEffect : MonoBehaviour {
+public class UISoftAdditiveEffect : global::UnityEngine.MonoBehaviour {
 }
 
 }

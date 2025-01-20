@@ -5,10 +5,10 @@ using UnityEngine.UI;
 
 namespace Kingmaker.UI.SettingsUI {
 
-public class SettingsListItemBase : MonoBehaviour {
-    public Image ItemBackground /* UnityEngine.UI.Image */;
+public class SettingsListItemBase : global::UnityEngine.MonoBehaviour {
+    public global::UnityEngine.UI.Image ItemBackground /* UnityEngine.UI.Image */;
     public object DescriptionLabel /* TMPro.TextMeshProUGUI */;
-    public TooltipTrigger Tooltip /* Kingmaker.UI.Tooltip.TooltipTrigger */;
+    public global::Kingmaker.UI.Tooltip.TooltipTrigger Tooltip /* Kingmaker.UI.Tooltip.TooltipTrigger */;
     public bool NeedResetSessionValue /* System.Boolean */;
 }
 

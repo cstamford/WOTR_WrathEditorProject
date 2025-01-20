@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Kingmaker.View {
 
-public class UnitMovementAgentBase : MonoBehaviour {
+public class UnitMovementAgentBase : global::UnityEngine.MonoBehaviour {
     [SerializeField] public float m_Acceleration /* System.Single */;
     [SerializeField] public float m_MinSpeed /* System.Single */;
     [SerializeField] public float m_AngularSpeed /* System.Single */;

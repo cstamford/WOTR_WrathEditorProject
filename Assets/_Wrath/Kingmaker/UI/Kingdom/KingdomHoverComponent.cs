@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Kingmaker.UI.Kingdom {
 
-public class KingdomHoverComponent : MonoBehaviour {
+public class KingdomHoverComponent : global::UnityEngine.MonoBehaviour {
     public float BasePosX /* System.Single */;
     public float HoverPosX /* System.Single */;
 }

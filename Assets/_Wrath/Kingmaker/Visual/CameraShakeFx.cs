@@ -3,13 +3,13 @@ using UnityEngine;
 
 namespace Kingmaker.Visual {
 
-public class CameraShakeFx : MonoBehaviour {
-    public AnimationCurve DeltaX /* UnityEngine.AnimationCurve */;
-    public AnimationCurve DeltaY /* UnityEngine.AnimationCurve */;
-    public AnimationCurve AmplitudeOverLifetime /* UnityEngine.AnimationCurve */;
-    public AnimationCurve FreqOverLifetime /* UnityEngine.AnimationCurve */;
-    public AnimationCurve AmplitudeOverDistance /* UnityEngine.AnimationCurve */;
-    public AnimationCurve FreqOverDistance /* UnityEngine.AnimationCurve */;
+public class CameraShakeFx : global::UnityEngine.MonoBehaviour {
+    public global::UnityEngine.AnimationCurve DeltaX /* UnityEngine.AnimationCurve */;
+    public global::UnityEngine.AnimationCurve DeltaY /* UnityEngine.AnimationCurve */;
+    public global::UnityEngine.AnimationCurve AmplitudeOverLifetime /* UnityEngine.AnimationCurve */;
+    public global::UnityEngine.AnimationCurve FreqOverLifetime /* UnityEngine.AnimationCurve */;
+    public global::UnityEngine.AnimationCurve AmplitudeOverDistance /* UnityEngine.AnimationCurve */;
+    public global::UnityEngine.AnimationCurve FreqOverDistance /* UnityEngine.AnimationCurve */;
     public bool ShakeAnchor /* System.Boolean */;
     public float AmplitudeMultiplier /* System.Single */;
     public float FreqMultiplier /* System.Single */;

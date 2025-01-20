@@ -4,11 +4,11 @@ using UnityEngine;
 
 namespace Kingmaker.Visual.Animation {
 
-public class Transition : ScriptableObject {
-    public AnimationActionBase FromAction /* Kingmaker.Visual.Animation.Actions.AnimationActionBase */;
-    public AnimationClip FromClip /* UnityEngine.AnimationClip */;
-    public AnimationActionBase ToAction /* Kingmaker.Visual.Animation.Actions.AnimationActionBase */;
-    public AnimationClip ToClip /* UnityEngine.AnimationClip */;
+public class Transition : global::UnityEngine.ScriptableObject {
+    public global::Kingmaker.Visual.Animation.Actions.AnimationActionBase FromAction /* Kingmaker.Visual.Animation.Actions.AnimationActionBase */;
+    public global::UnityEngine.AnimationClip FromClip /* UnityEngine.AnimationClip */;
+    public global::Kingmaker.Visual.Animation.Actions.AnimationActionBase ToAction /* Kingmaker.Visual.Animation.Actions.AnimationActionBase */;
+    public global::UnityEngine.AnimationClip ToClip /* UnityEngine.AnimationClip */;
     public float Duration /* System.Single */;
 }
 

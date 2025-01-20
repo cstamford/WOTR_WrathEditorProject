@@ -1,0 +1,12 @@
+using Kingmaker.UI.MVVM._PCView.Kingdom.KingdomInfo;
+using System;
+using UnityEngine;
+
+namespace Kingmaker.UI.MVVM._ConsoleView.GlobalMap.KingdomInfo {
+
+public class KingdomStatConsoleView {
+    [SerializeField] public object m_Button /* Owlcat.Runtime.UI.Controls.Button.OwlcatMultiButton */;
+}
+
+}
+

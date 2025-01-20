@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.Utility {
 
-public class OutdoorLightSceneMarker : MonoBehaviour {
+public class OutdoorLightSceneMarker : global::UnityEngine.MonoBehaviour {
 }
 
 }

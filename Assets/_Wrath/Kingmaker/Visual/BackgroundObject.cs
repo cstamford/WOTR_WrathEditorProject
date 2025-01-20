@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.Visual {
 
-public class BackgroundObject : MonoBehaviour {
+public class BackgroundObject : global::UnityEngine.MonoBehaviour {
 }
 
 }

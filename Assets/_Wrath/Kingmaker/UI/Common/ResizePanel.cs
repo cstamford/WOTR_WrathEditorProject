@@ -1,12 +1,13 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.UI.Common {
 
-public class ResizePanel : MonoBehaviour {
-    public Vector2 MaxSize /* UnityEngine.Vector2 */;
-    public Vector2 MinSize /* UnityEngine.Vector2 */;
-    public ResizePanel.ResizePivot Pivot /* Kingmaker.UI.Common.ResizePivot */;
-    public GameObject TargetGameObject /* UnityEngine.GameObject */;
+public class ResizePanel : global::UnityEngine.MonoBehaviour {
+    public global::UnityEngine.Vector2 MaxSize /* UnityEngine.Vector2 */;
+    public global::UnityEngine.Vector2 MinSize /* UnityEngine.Vector2 */;
+    public global::Kingmaker.UI.Common.ResizePanel.ResizePivot Pivot /* Kingmaker.UI.Common.ResizePivot */;
+    public global::UnityEngine.GameObject TargetGameObject /* UnityEngine.GameObject */;
 
     public enum ResizePivot {
         TopLeft = 0,

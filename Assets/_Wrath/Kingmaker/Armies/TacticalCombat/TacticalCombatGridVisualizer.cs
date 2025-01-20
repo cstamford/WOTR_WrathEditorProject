@@ -1,10 +1,11 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.Armies.TacticalCombat {
 
-public class TacticalCombatGridVisualizer : MonoBehaviour {
-    [SerializeField] public GameObject CellPrefab /* UnityEngine.GameObject */;
-    [SerializeField] public GameObject BigCellPrefab /* UnityEngine.GameObject */;
+public class TacticalCombatGridVisualizer : global::UnityEngine.MonoBehaviour {
+    [SerializeField] public global::UnityEngine.GameObject CellPrefab /* UnityEngine.GameObject */;
+    [SerializeField] public global::UnityEngine.GameObject BigCellPrefab /* UnityEngine.GameObject */;
 }
 
 }

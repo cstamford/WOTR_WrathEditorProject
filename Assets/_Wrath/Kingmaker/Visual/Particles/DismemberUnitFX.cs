@@ -3,8 +3,8 @@ using UnityEngine;
 
 namespace Kingmaker.Visual.Particles {
 
-public class DismemberUnitFX : MonoBehaviour {
-    [SerializeField] public GameObject m_DismemberBloodPuddle /* UnityEngine.GameObject */;
+public class DismemberUnitFX : global::UnityEngine.MonoBehaviour {
+    [SerializeField] public global::UnityEngine.GameObject m_DismemberBloodPuddle /* UnityEngine.GameObject */;
     public float Delay /* System.Single */;
 }
 

@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace NobleMuffins.LimbHacker.Guts {
 
-public class ForwardPassAgent : MonoBehaviour {
+public class ForwardPassAgent : global::UnityEngine.MonoBehaviour {
 }
 
 }

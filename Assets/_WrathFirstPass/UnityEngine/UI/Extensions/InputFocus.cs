@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace UnityEngine.UI.Extensions {
 
-public class InputFocus : MonoBehaviour {
+public class InputFocus : global::UnityEngine.MonoBehaviour {
     public bool _ignoreNextActivation /* System.Boolean */;
 }
 

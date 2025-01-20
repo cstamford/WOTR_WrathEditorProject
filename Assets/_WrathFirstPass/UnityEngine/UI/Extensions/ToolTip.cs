@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace UnityEngine.UI.Extensions {
 
-public class ToolTip : MonoBehaviour {
+public class ToolTip : global::UnityEngine.MonoBehaviour {
 }
 
 }

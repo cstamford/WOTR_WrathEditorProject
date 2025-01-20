@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Kingmaker.View {
 
-public class SkipOutOfBoundsCheck : MonoBehaviour {
+public class SkipOutOfBoundsCheck : global::UnityEngine.MonoBehaviour {
 }
 
 }

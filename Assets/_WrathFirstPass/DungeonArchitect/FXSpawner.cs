@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace DungeonArchitect {
 
-public class FXSpawner : MonoBehaviour {
+public class FXSpawner : global::UnityEngine.MonoBehaviour {
 }
 
 }

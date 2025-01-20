@@ -1,5 +1,6 @@
+using System;
 using UnityEngine;
 
-public class Ceiling : MonoBehaviour {
+public class Ceiling : global::UnityEngine.MonoBehaviour {
 }
 

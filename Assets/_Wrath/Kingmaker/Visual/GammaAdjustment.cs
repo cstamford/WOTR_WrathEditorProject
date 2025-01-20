@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Kingmaker.Visual {
 
-public class GammaAdjustment : MonoBehaviour {
+public class GammaAdjustment : global::UnityEngine.MonoBehaviour {
     [SerializeField] public float m_Gamma /* System.Single */;
 }
 
